@@ -1,0 +1,97 @@
+.hero{
+    width: 100%;
+    padding-top: 150px;
+    height: 660px;
+    background-color: #061225;
+    color: #fff;
+    
+    &-container{
+        padding-left: 10.6rem;
+        position: absolute;
+
+        &-content{
+            font-size: 70px;
+            line-height: 80px;
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 30px;
+
+            &--subTitle{
+                width: 689px;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 40px;
+            }
+            &-degraded{
+                font-weight: 700;
+                font-size: 75px;
+                line-height: 80px;
+                background: linear-gradient(94.26deg, #4D5DFB 11.44%, #F907FC 80.77%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                width: 0;
+                overflow: hidden;
+                white-space: nowrap;
+                border-right: 3px solid #384cfe;
+                animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+
+                @keyframes typing {
+                    from {
+                      width: 0;
+                    }
+                    to {
+                      width: 100%;
+                    }
+                }
+                @keyframes blink {
+                    50% {
+                        border-color: transparent;
+                    }
+                }
+            }
+        }
+    button{
+        display: flex;
+        background: linear-gradient(85.26deg, #4D5DFB 11.44%, #F907FC 80.77%);
+        font-weight: 400;
+        font-size: 16px;
+        padding: 15px 28px;
+        border-radius: 4px;
+    }
+  }
+
+    &-arrow{
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        top: 92%;
+        -moz-animation: bounce 2s infinite;
+        -webkit-animation: bounce 2s infinite;
+        animation: bounce 2s infinite;
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+              transform: translateY(0);
+            }
+            40% {
+              transform: translateY(-30px);
+            }
+            60% {
+              transform: translateY(-15px);
+            }
+        }
+    }
+
+    &-btnIdea{
+        display: inline-block;
+        position: relative;
+        left: 93%;
+        top: 5%;
+    }
+
+    &-socialIcons{
+        @apply space-x-8 flex flex-row ml-16 items-center;
+    }
+}

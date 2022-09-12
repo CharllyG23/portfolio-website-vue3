@@ -1,0 +1,57 @@
+header {
+    @apply flex flex-wrap fixed top-0 left-0 w-full transition-all duration-100 z-50 border-b border-solid border-transparent;
+
+    &.scroll {
+        @apply border-gray-200 bg-white;
+
+        .header {
+            @apply lg:py-2.5;
+        }
+    }
+
+    .header {
+        transition: all 0.2s;
+      @apply flex flex-wrap w-full lg:pl-40 lg:py-5 lg:flex-nowrap lg:items-center lg:mx-auto lg:max-w-7xl;
+    }
+
+    .header-link {
+      @apply px-3 text-lg inline-block transition-all duration-200 relative lg:px-0 lg:text-base text-white focus:outline-none;
+    }
+
+    .nav {
+       @apply w-full h-0 transition-all duration-300 lg:w-auto lg:h-auto lg:flex-1;
+
+        nav {
+            @apply flex flex-col h-full overflow-y-auto lg:flex-row lg:overflow-visible;
+
+            .navbar {
+                @apply flex flex-col items-center mb-12 lg:flex-row lg:mb-0 lg:flex-1 lg:w-full lg:space-x-16 lg:pl-40;
+
+                li {
+                    @apply py-3 relative lg:py-0;
+                }
+            }
+        }
+    }
+    .nav-button {
+        @apply p-4 lg:hidden;
+    }
+
+    .logo {
+        @apply h-6  lg:h-11 absolute left-1/2 top-5 transform -translate-x-1/2 lg:static lg:transform-none;
+        a{
+            @apply block h-full;
+        }
+    }
+
+    &.pre-show {
+        @apply bg-slate-900;
+    }
+
+    &.show {
+        .nav {
+            height: calc(100vh - 4.25rem);
+        }
+    }
+}   
+  
