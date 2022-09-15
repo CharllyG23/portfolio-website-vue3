@@ -2,7 +2,9 @@ header {
     @apply flex flex-wrap fixed top-0 left-0 w-full transition-all duration-100 z-50 border-b border-solid border-transparent;
 
     &.scroll {
-        @apply border-gray-200 bg-white;
+        background-color: rgba(10, 25, 47, 0.85);
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(7.5px);
 
         .header {
             @apply lg:py-2.5;
@@ -11,7 +13,7 @@ header {
 
     .header {
         transition: all 0.2s;
-      @apply flex flex-wrap w-full lg:pl-40 lg:py-5 lg:flex-nowrap lg:items-center lg:mx-auto lg:max-w-7xl;
+      @apply flex flex-wrap w-full pb-2 lg:pl-40 justify-between lg:py-5 lg:flex-nowrap lg:items-center lg:mx-auto lg:max-w-full overflow-hidden;
     }
 
     .header-link {
@@ -19,13 +21,13 @@ header {
     }
 
     .nav {
-       @apply w-full h-0 transition-all duration-300 lg:w-auto lg:h-auto lg:flex-1;
+       @apply w-full h-0 transition-all duration-300 lg:w-auto lg:h-auto ;
 
         nav {
-            @apply flex flex-col h-full overflow-y-auto lg:flex-row lg:overflow-visible;
+            @apply flex flex-col h-full lg:flex-row pr-0 lg:pr-40;
 
             .navbar {
-                @apply flex flex-col items-center mb-12 lg:flex-row lg:mb-0 lg:flex-1 lg:w-full lg:space-x-16 lg:pl-40;
+                @apply flex flex-col items-center mb-12 lg:flex-row lg:mb-0 lg:flex-1 lg:w-full lg:space-x-8 lg:mt-0 mt-14;
 
                 li {
                     @apply py-3 relative lg:py-0;
@@ -34,13 +36,20 @@ header {
         }
     }
     .nav-button {
-        @apply p-4 lg:hidden;
+        @apply pl-8 pt-4 lg:hidden;
     }
-
+    .btn{
+        color: #4D5DFB;
+        font-family: 'Charm';
+        font-weight: 700;
+        font-size: 24px;
+    }
     .logo {
-        @apply h-6  lg:h-11 absolute left-1/2 top-5 transform -translate-x-1/2 lg:static lg:transform-none;
+        @apply h-6 flex lg:h-11 font-bold text-3xl absolute left-1/2  transform -translate-x-1/2 lg:static lg:transform-none;
+        color: #4D5DFB;
+        font-family: 'Charm';
         a{
-            @apply block h-full;
+            @apply items-center h-full flex mt-5 lg:mt-0;
         }
     }
 

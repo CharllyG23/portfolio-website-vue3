@@ -1,13 +1,11 @@
 <template>
-    <div class="selectLang">
+    <div>
         <select>
-            <option selected>Portugues</option>
-            <option value="US">Engles</option>
+            <option value="hola">Portugues</option>
+            <option value="hola3">Ingles</option>
         </select>
-</div>
+    </div>
 </template>
-<script setup>
-</script>
-<style  lang="scss" scoped>
+ <style lang="scss" scoped>
 @import './style.scss';
-</style>
+</style> 

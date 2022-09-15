@@ -1,5 +1,5 @@
 <template>
-    <p class="letters">{{ name }}</p>
+    <div class="letters"><p>{{ name }}</p></div>
 </template>
 <script setup>
 defineProps({
@@ -9,6 +9,6 @@ defineProps({
 	},
 })
 </script>
-<style scoped>
+<style lang="scss" scoped>
 @import './style.scss';
 </style>

@@ -1,6 +1,6 @@
 <template>
     <header :class="{ 'show': show, 'pre-show': preShow, 'scroll': scroll }">
-        <div class="header" ref="header">
+        <div class="header">
             <div class="nav-button">
                 <button v-if="show" @click="toggleMenu">
                   <app-icons name="close" :size="28"></app-icons>
@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="logo" >
-              <a href="#default" class="logo">Charlly<span class="logo-p"> /></span></a>
+              <a href="#default" class="logo">Charlly/></a>
             </div>
             <div class="nav">
                 <nav>
@@ -34,7 +34,7 @@
     </header>
 </template>
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted} from 'vue'
 import AppLangSelector from '../AppLangSelector/AppLangSelector.vue';
 import AppIcons from '../AppIcons/AppIcons.vue';
 
@@ -43,8 +43,8 @@ const show = ref(false)
 const preShow = ref(false)
 const lg = ref(false)
 
-let throttle = false, 
-    scrollPosition = window.scrollY
+let throttle = false,
+scrollPosition = window.scrollY
 
 const toggleMenu = () => {
     if (show.value) {
@@ -73,7 +73,6 @@ const onScroll = () => {
             throttle = false
         })
     }
-
     throttle = true
 }
 
@@ -81,13 +80,7 @@ onMounted(() => {
     window.addEventListener('resize', onResize)
     window.addEventListener('scroll', onScroll)
 })
-onBeforeUnmount(() => {
-    window.removeEventListener('resize', onResize)
-    window.removeEventListener('scroll', onScroll)
-})
 
-onResize()
-setHeaderHeight()
 </script>
 <style lang="scss" scoped>
 @import './style.scss';
