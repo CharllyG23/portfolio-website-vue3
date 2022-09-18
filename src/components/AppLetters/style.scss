@@ -1,15 +1,9 @@
 .letters{
-    @apply w-full absolute hidden lg:inline-block;
+    @apply w-full hidden lg:flex items-center ;
     
     p{
-        @apply justify-center font-bold tracking-wide;
+        @apply justify-center items-center font-bold tracking-wide;
         color: rgba(114, 124, 137, 0.05);
         font-size: 15vw;
     }
-
-    @media only screen and (max-width: 1024px) {
-        p{
-           @apply pt-20;
-        }
-      }
 }

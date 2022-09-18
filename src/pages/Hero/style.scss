@@ -1,33 +1,30 @@
 .hero{
-    @apply pt-40 text-white w-full h-screen max-h-screen;
-        background-color: #061225;
+    @apply pt-36 lg:pt-44 text-white w-full h-[675px];
+    background-color: #020D1E;
+
     &-container{
-        @apply pl-8 lg:pl-40 absolute delay-200;
+        @apply px-7  lg:pl-36 absolute;
     
         &-content{
-            @apply text-4xl md:text-6xl lg:text-7xl text-white font-bold mb-5 delay-300 block;
+            @apply text-4xl md:text-6xl lg:text-7xl text-white font-bold mb-5 delay-200 block;
 
             &--subTitle{
-                @apply w-full lg:max-w-2xl font-light text-base mb-10 whitespace-normal delay-300 pr-8;
+                @apply w-full lg:max-w-2xl font-light text-base mb-10 whitespace-normal delay-200;
             }
             &-degraded{
-                @apply font-bold text-5xl md:text-6xl lg:text-[80px] overflow-hidden whitespace-normal delay-300  ;
+                @apply font-bold text-5xl md:text-6xl lg:text-[80px] overflow-hidden whitespace-normal delay-300 w-full;
                 background: linear-gradient(94.26deg, #4D5DFB 11.44%, #F907FC 80.77%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
             }
         }
-            button{
-                @apply flex font-normal text-base px-10 py-5 rounded mb-5;
-                background: linear-gradient(85.26deg, #4D5DFB 11.44%, #F907FC 80.77%);
-            }  
-        // &-socialIcons{
-        //     @apply space-x-8 flex md:ml-16 -ml-0.5 items-center justify-center;
-        // }
+        button{
+            @apply flex font-normal text-base px-10 py-5 rounded;
+            background: linear-gradient(85.26deg, #4D5DFB 11.44%, #F907FC 80.77%);
+        }  
     }
-
     &-btnIdea{
-        @apply hidden md:inline-block relative left-[93%] top-[5%];
+        @apply hidden md:inline-block absolute left-[93%] top-[20%];
     }  
 }

@@ -13,7 +13,7 @@ header {
 
     .header {
         transition: all 0.2s;
-      @apply flex flex-wrap w-full pb-2 lg:pl-40 justify-between lg:py-5 lg:flex-nowrap lg:items-center lg:mx-auto lg:max-w-full overflow-hidden;
+      @apply flex flex-wrap w-full pb-2 lg:pl-36 justify-between lg:py-5 lg:flex-nowrap lg:items-center lg:mx-auto lg:max-w-full overflow-hidden;
     }
 
     .header-link {
@@ -36,7 +36,7 @@ header {
         }
     }
     .nav-button {
-        @apply pl-8 pt-4 lg:hidden;
+        @apply pl-7 pt-4 lg:hidden;
     }
     .btn{
         color: #4D5DFB;
