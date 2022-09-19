@@ -19,7 +19,6 @@
                     <img :src="imageDefault" alt="imagen perfil" />
                 </div>
             </div>
-
             <div class="about-container-skill">
                 <h3>Habilidades e ferramentas</h3>
                 <p>Minha caixa de ferramentas e coisas que posso fazer</p>
@@ -42,6 +41,11 @@
                 <app-icons name="rest-api" :size="50"></app-icons>
                 <app-icons name="git-cmd" :size="50"></app-icons>
            </div>
+            <div class="about-container-nowadays">
+                <h3>Habilidades e ferramentas</h3>
+                <p>Melhorar minhas habilidades em JavaScript e estendendo a ideia de microservice <strong class="stress">{Microfrontend}</strong> 
+                para desenvolvimento frontend.</p>
+            </div>
         </div>
         <app-letters :name="'CREATIVE'"/>
     </div>  

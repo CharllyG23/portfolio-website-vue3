@@ -1,5 +1,5 @@
  .about{
-    @apply pt-28 text-white w-full min-h-screen mr-auto ml-auto;
+    @apply text-white w-full min-h-screen ;
     background-color: #020D1E;
 
     .stress{
@@ -7,16 +7,10 @@
         font-weight: 700;
     }
     &-container{
-        @apply px-7  md:pl-10 lg:pl-36 delay-200;
-
-        .title{
-            @apply font-bold text-4xl lg:text-5xl mb-16 whitespace-pre-wrap box-border max-w-full w-[360px] ;
-            color: #4D5DFB;  
-        }
+        @apply  w-full max-w-6xl mx-auto items-start pt-28 px-9 pl-9 pr-9 relative overflow-hidden delay-200;
 
         &-content {
             @apply block lg:flex flex-col lg:flex-row justify-between items-center w-full;
-
 
             &-info{
                 @apply whitespace-normal w-full lg:max-w-2xl lg:pr-10 lg:items-center;
@@ -30,24 +24,20 @@
                 } 
             }
             
-            .image{
-                @apply lg:w-1/2; 
-                
-                img{
-                    @apply w-52 lg:w-72 h-52 lg:h-72 overflow-hidden rounded-full;
-                    background-color: #4D5DFB;
-                }
+            img{
+                @apply w-52 lg:w-72 h-52 lg:h-72 overflow-hidden rounded-full;
+                background: rgba(77, 93, 251, 0.2);
+                border: 1px solid #6970BE;
             }
-           
 
             @media screen and (max-width: 1024px) {
-                .image{
-                    img{
-                        margin: 50px auto 0px;
-                        max-width: 208px;
-                        border-radius: 50%;
-                        box-sizing: inherit;
-                    }
+                img{
+                    margin: 50px auto 0px;
+                    max-width: 208px;
+                    border-radius: 50%;
+                    box-sizing: inherit;
+                    background: rgba(77, 93, 251, 0.2);
+                    border: 1px solid #6970BE;
                 }    
             }
         }
@@ -58,9 +48,17 @@
             @apply text-2xl font-bold mb-5;
             }
         }
+
+        &-nowadays{
+            @apply py-20 text-base font-light w-full;
+
+            h3{
+                @apply text-2xl font-bold mb-5;
+            }
+        }
  
         .iconsContainer{
-            @apply inline-flex relative flex-wrap min-h-full md:w-[80%] lg:w-[685px] box-border items-center gap-4 lg:gap-10 pt-10;
+            @apply inline-flex relative flex-wrap min-h-full w-full lg:w-[685px] box-border items-center gap-4 lg:gap-8 pt-10 delay-200;
         }       
     }
  }

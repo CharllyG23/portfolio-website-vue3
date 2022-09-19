@@ -1,8 +1,8 @@
 .letters{
-    @apply w-full hidden lg:flex items-center ;
+    @apply w-full hidden lg:flex items-center relative;
     
     p{
-        @apply justify-center items-center font-bold tracking-wide;
+        @apply justify-center items-center font-bold tracking-wide absolute;
         color: rgba(114, 124, 137, 0.05);
         font-size: 15vw;
     }
