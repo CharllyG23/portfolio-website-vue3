@@ -42,12 +42,12 @@
                 <app-icons name="git-cmd" :size="50"></app-icons>
            </div>
             <div class="about-container-nowadays">
-                <h3>Habilidades e ferramentas</h3>
+                <h3>Atualmente trabalhando em:</h3>
                 <p>Melhorar minhas habilidades em JavaScript e estendendo a ideia de microservice <strong class="stress">{Microfrontend}</strong> 
                 para desenvolvimento frontend.</p>
             </div>
         </div>
-        <app-letters :name="'CREATIVE'"/>
+        <!-- <app-letters :name="'CREATIVE'"/> -->
     </div>  
 </template>
 <script setup>

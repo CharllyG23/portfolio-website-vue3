@@ -24,17 +24,17 @@
           </div> -->
         </div> 
       </div>
-      <div class="hero-btnIdea">
+      <!-- <div class="hero-btnIdea">
         <button>
           <app-icons name="idea" :size="32"></app-icons>
         </button>
-      </div>
-      <app-letters :name="'DEVELOPER'"/>
+      </div> -->
+      <!-- <app-letters :name="'DEVELOPER'"/> -->
   </section>
 </template>
 <script setup>
 import AppIcons from '../../components/AppIcons/AppIcons.vue';
-import AppLetters from '../../components/AppLetters/AppLetters.vue';
+// import AppLetters from '../../components/AppLetters/AppLetters.vue';
 </script>
 <style lang="scss" scoped>
   @import './style.scss';

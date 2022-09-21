@@ -1,7 +1,6 @@
  .about{
     @apply text-white w-full min-h-screen ;
-    background-color: #020D1E;
-
+    
     .stress{
         color: #F907FC;
         font-weight: 700;
@@ -33,7 +32,7 @@
             @media screen and (max-width: 1024px) {
                 img{
                     margin: 50px auto 0px;
-                    max-width: 208px;
+                    max-width: 280px;
                     border-radius: 50%;
                     box-sizing: inherit;
                     background: rgba(77, 93, 251, 0.2);
