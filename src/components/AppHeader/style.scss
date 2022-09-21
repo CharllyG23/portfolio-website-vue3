@@ -2,18 +2,18 @@ header {
     @apply flex flex-wrap fixed top-0 left-0 w-full transition-all duration-100 z-50 ;
 
     &.scroll {
-        background-color: rgba(10, 25, 47, 0.85);
+        background-color: rgba(2, 13, 47, 0.5);
         box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
-        backdrop-filter: blur(7.5px);
+        backdrop-filter: blur(9px);
 
         .header {
-            @apply lg:py-2.5;
+            @apply lg:py-4;
         }
     }
 
     .header {
         transition: all 0.2s;
-      @apply flex flex-wrap w-full pb-2 lg:pl-8 justify-between lg:py-10 lg:flex-nowrap lg:items-center lg:mx-auto lg:max-w-6xl overflow-hidden;
+      @apply flex flex-wrap w-full py-3 lg:pl-8 justify-between lg:py-10 lg:flex-nowrap lg:items-center lg:mx-auto lg:max-w-6xl overflow-hidden;
       
     }
 
@@ -50,7 +50,7 @@ header {
         color: #4D5DFB;
         font-family: 'Charm';
         a{
-            @apply items-center h-full flex mt-5 lg:mt-0;
+            @apply items-center h-full flex mt-4 lg:mt-0;
         }
     }
 
