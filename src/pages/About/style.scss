@@ -24,9 +24,8 @@
             }
             
             img{
-                @apply w-52 lg:w-72 h-52 lg:h-72 overflow-hidden rounded-full;
+                @apply w-52 lg:w-72 h-52 lg:h-72 overflow-hidden rounded-full border;
                 background-color: #4D5DFB;
-                border: 3px solid #6970BE;
             }
 
             @media screen and (max-width: 1024px) {
@@ -35,8 +34,6 @@
                     max-width: 280px;
                     border-radius: 50%;
                     box-sizing: inherit;
-                    background-color: #4D5DFB;
-                    border: 1px solid #6970BE;
                 }    
             }
         }

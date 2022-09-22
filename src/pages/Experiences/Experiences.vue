@@ -35,7 +35,7 @@ const steps = [
 	},
    {
 		title: 'Partyou',
-		time: 'Novembro 2021 - 2022',
+		time: 'Novembro 2021 - Atual',
       subTitle: 'Junto com a equipe de frontend, criamos código moderno, eficiente e de fácil manutenção com o framework Vue 3 para uma ampla gama de projetos internos.',
 	},
 ]

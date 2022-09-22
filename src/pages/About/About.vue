@@ -11,9 +11,7 @@
                         e acredito firmemente que menos é mais.</p>
                     <p>Sou Engenheiro em Informatica formado em 2020 na <strong class="stress">Venezuela,</strong> mas moro em Brasil um país vibrante cheio de pessoas espetacularmente diferentes,
                         gosto de ler, assistir filmes interessantes com uma mensagem inspiradora, 
-                        também gosto de jogar jogos de Shooter, minha banda de música favorita é Imagine Dragons e claro que sou um <strong class="stress">servo de gatos.</strong></p> 
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum cumque culpa, magni repellat, dolor nulla ex accusantium et cupiditate quod reprehenderit illo, consequatur nesciunt sit vel harum excepturi? Sit!
-                            <strong class="stress">reprehenderit.</strong></p>   
+                        também gosto de jogar jogos de Shooter, minha banda de música favorita é Imagine Dragons e claro que sou um <strong class="stress">servo de gatos.</strong></p>  
                 </div>
                 <div class="image">
                     <img :src="imageDefault" alt="imagen perfil" />

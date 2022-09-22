@@ -1,5 +1,5 @@
 <template>
-  <section class="hero">
+  <section id="home" class="hero">
       <div class="hero-container">
         <div class="hero-container-content">
           <div class="flex items-center">

@@ -1,5 +1,5 @@
 <template>
-    <div class="layout">
+    <div>
         <Hero />
         <About />
         <Experiences />
@@ -12,6 +12,3 @@ import About from '../pages/About/About.vue';
 import Experiences from '../pages/Experiences/Experiences.vue';
 import Works from '../pages/Works/Works.vue';
 </script>
-<style lang="scss">
-@import './style.scss';
-</style>

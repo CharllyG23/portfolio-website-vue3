@@ -15,13 +15,13 @@
                     }
 
                     h2 {
-                        @apply text-base text-white font-medium mb-8 lg:text-2xl lg:leading-9;
+                        @apply text-base text-white font-medium mb-10 lg:text-2xl lg:leading-9;
                     }
 
 
                 &__list {
                     @apply 
-                        max-w-[18rem]
+                        max-w-sm
                         w-full
                         space-y-2
                         mx-auto
@@ -86,16 +86,16 @@
                         }
             
                        &__info{
-                        @apply ml-3;
+                        @apply ml-4;
                             .__titleInfo {
-                                @apply text-base font-semibold pt-0.5 lg:text-center  xl:text-lg;
+                                @apply text-base font-semibold pt-0.5 lg:text-center;
                                 color: #4D5DFB;
                             }
                             .__timeInfo {
-                                @apply text-xs text-slate-400 pt-0.5 lg:text-center ;
+                                @apply text-xs text-slate-400 pt-0.5 lg:text-center;
                             }
                             .__subTitleInfo {
-                                @apply text-sm text-white  pt-3 lg:text-center xl:text-base;
+                                @apply text-sm text-white  pt-3 lg:text-center;
                             }
                        }
                     }

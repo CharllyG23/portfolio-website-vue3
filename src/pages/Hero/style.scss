@@ -1,8 +1,8 @@
 .hero{
-    @apply text-white w-full h-[675px];
+    @apply text-white w-full min-h-[85vh];
 
     &-container{
-        @apply w-full max-w-6xl mx-auto items-start pt-36 lg:pt-44 px-9 pl-9 pr-9 relative overflow-hidden;
+        @apply w-full max-w-6xl mx-auto items-start pt-36 lg:pb-20 xl:pt-48 px-9 pl-9 pr-9 relative overflow-hidden;
     
         &-content{
             @apply text-4xl md:text-6xl lg:text-7xl text-white font-bold mb-5 delay-200 block leading-[45px] ;
