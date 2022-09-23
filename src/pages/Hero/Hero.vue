@@ -24,11 +24,7 @@
           </div> -->
         </div> 
       </div>
-      <!-- <div class="hero-btnIdea">
-        <button>
-          <app-icons name="idea" :size="32"></app-icons>
-        </button>
-      </div> -->
+
       <!-- <app-letters :name="'DEVELOPER'"/> -->
   </section>
 </template>
