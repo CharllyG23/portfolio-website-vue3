@@ -24,8 +24,8 @@
             }
             
             img{
-                @apply w-52 lg:w-72 h-52 lg:h-72 overflow-hidden rounded-full border;
-                background-color: #4D5DFB;
+                @apply w-52 lg:w-72 h-52 lg:h-72 overflow-hidden rounded-full border-blue-900 border;
+                background-color: #040936;
             }
 
             @media screen and (max-width: 1024px) {
