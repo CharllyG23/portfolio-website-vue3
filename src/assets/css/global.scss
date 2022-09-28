@@ -11,3 +11,15 @@ body{
     color: #4D5DFB;  
 }
 
+.pages{
+    @apply text-white w-full min-h-screen;
+
+    &-container{
+        @apply  w-full max-w-6xl mx-auto items-start py-20 px-9 pl-9 pr-9 relative overflow-hidden delay-200;
+
+        &-content{
+            @apply block lg:flex flex-col lg:flex-row justify-between items-center w-full;
+        }
+    }
+}
+

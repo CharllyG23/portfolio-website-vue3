@@ -1,8 +1,8 @@
 <template>
-   <div id="experiences" class="experiences">
-      <div class="experiences-container">
+   <div id="experiences" class="pages">
+      <div class="pages-container">
          <h1 class="title">Experiências</h1>
-         <div class="experiences-container-content">
+         <div class="pages-container-content">
             <div class="steps">
                <h2>Onde trabalhei e cresci profissionalmente, como Desenvolvedora Frontend.</h2>
                <div class="steps__list">

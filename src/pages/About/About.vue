@@ -1,9 +1,9 @@
 <template>
-    <div id="about" class="about">
-        <div class="about-container">
+    <div id="about" class="pages">
+        <div class="pages-container">
             <h2 class="title">Escrevo código, Desenho coisas</h2>
-            <div class="about-container-content">
-                <div class="about-container-content-info">
+            <div class="pages-container-content">
+                <div class="info">
                     <span>Quem é charlly</span>
                     <p>Uma desenvolvedora front-end  motivada pela curiosidade com habilidades de design.</p>
                     <p>Sou apaixonado por dar vida aos aspectos técnicos e visuais dos produtos digitais. Experiência do usuário, 
@@ -17,7 +17,7 @@
                     <img :src="imageDefault" alt="imagen perfil" />
                 </div>
             </div>
-            <div class="about-container-skill">
+            <div class="skill">
                 <h3>Habilidades e ferramentas</h3>
                 <p>Minha caixa de ferramentas e coisas que posso fazer</p>
             </div>
@@ -39,7 +39,7 @@
                 <app-icons name="rest-api" :size="50"></app-icons>
                 <app-icons name="git-cmd" :size="50"></app-icons>
            </div>
-            <div class="about-container-nowadays">
+            <div class="nowadays">
                 <h3>Atualmente trabalhando em:</h3>
                 <p>Melhorar minhas habilidades em JavaScript e estendendo a ideia de microservice <strong class="stress">{Microfrontend}</strong> 
                 para desenvolvimento frontend.</p>
