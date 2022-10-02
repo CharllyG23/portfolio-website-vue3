@@ -4,7 +4,7 @@
          <h1 class="title">Experiências</h1>
          <div class="pages-container-content">
             <div class="steps">
-               <h2>Onde trabalhei e cresci profissionalmente, como Desenvolvedora Frontend.</h2>
+               <h2 class="subTitle">Onde trabalhei e cresci profissionalmente, como Desenvolvedora Frontend.</h2>
                <div class="steps__list">
                   <div class="steps__list--item" v-for="(step, index) in steps" :key="step">
                      <span>{{ index + 1 }}</span>

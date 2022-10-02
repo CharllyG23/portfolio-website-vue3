@@ -3,9 +3,8 @@
         color: #F907FC;
         font-weight: 700;
     }
-
     .info{
-        @apply whitespace-normal w-full lg:max-w-2xl lg:pr-10 lg:items-center;
+        @apply whitespace-normal w-full lg:max-w-2xl gap-8 lg:items-center;
         span {
             @apply text-lg font-extrabold;
             color: #F907FC;
@@ -15,20 +14,75 @@
             @apply w-full flex-wrap text-base font-light py-3;
         } 
     }
-    
-    img{
-        @apply w-52 lg:w-72 h-52 lg:h-72 overflow-hidden rounded-full border-blue-900 border;
-        background-color: #040936;
-    }
+    .about-img{
+        @apply max-w-[300px] relative;
+        .wrapper{
+            box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+            transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+            display: block;
+            position: relative;
+            width: 100%;
+            border-radius: 12px;
+            background-color: #F907FC;
 
+            &:hover,
+            &:focus {
+                outline: 0;
+                &:after {
+                    top: 15px;
+                    left: 15px;
+                }
+
+                .img {
+                    filter: none;
+                    mix-blend-mode: normal;
+                }
+            }
+
+            .img {
+                @apply overflow-hidden rounded-lg;
+                position: relative;
+                mix-blend-mode: multiply;
+                filter: blur(5px);
+                transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+            }
+
+            &:before,
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+            }
+
+            &:before {
+                top: 0;
+                left: 0;
+                background-color: #F907FC;
+                mix-blend-mode: screen;
+            }
+
+            &:after {
+                border: 2px solid #F907FC;
+                top: 20px;
+                left: 20px;
+                z-index: -1;
+            }
+    }
+}    
+    
     @media screen and (max-width: 1024px) {
-        img{
-            margin: 50px auto 0px;
-            max-width: 280px;
-            border-radius: 50%;
+        .about-img{
+            margin: 40px auto 0px;
+            width: 70%;
             box-sizing: inherit;
+            padding-bottom: 2rem;
         }    
     }
+
     .skill{
             @apply pt-11;
 

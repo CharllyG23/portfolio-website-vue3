@@ -16,10 +16,13 @@
             background-clip: text;
         }
         button{
-            @apply flex font-normal text-base px-9 py-5 lg:px-8 lg:py-5 rounded shadow-md;
+            @apply flex font-normal text-base px-9 py-5 lg:px-8 lg:py-5 rounded;
             background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 40px -10px #172a4b;
             &:hover{
-                background: linear-gradient(85.26deg, #596afe 11.44%, #fc3aff 80.77%);
+                padding: 20px 45px;
+                max-width: 270px;
              }
         }
         

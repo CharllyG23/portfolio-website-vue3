@@ -13,8 +13,12 @@
                         gosto de ler, assistir filmes interessantes com uma mensagem inspiradora, 
                         também gosto de jogar jogos de Shooter, minha banda de música favorita é Imagine Dragons e claro que sou um <strong class="stress">servo de gatos.</strong></p>  
                 </div>
-                <div class="image">
-                    <img :src="imageDefault" alt="imagen perfil" />
+                <div class="about-img">
+                    <div class="wrapper">
+                        <div class="img">
+                            <img :src="imageDefault" alt="imagen perfil" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="skill">
