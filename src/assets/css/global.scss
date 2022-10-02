@@ -12,7 +12,7 @@ body{
 }
 
 .pages{
-    @apply text-white w-full min-h-screen;
+    @apply text-white w-full min-h-[85vh];
 
     &-container{
         @apply  w-full max-w-6xl mx-auto items-start py-20 px-9 pl-9 pr-9 relative overflow-hidden delay-200;

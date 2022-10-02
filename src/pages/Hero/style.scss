@@ -10,19 +10,20 @@
         }
         &-degraded{
             @apply font-bold text-[2.5rem] md:text-6xl lg:text-[80px] overflow-hidden whitespace-normal;
-            background: linear-gradient(94.26deg, #4D5DFB 11.44%, #F907FC 55.77%);
+            background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-    
         button{
-            @apply flex font-normal text-base px-9 py-5 lg:px-10 lg:py-5 rounded;
-            background: linear-gradient(85.26deg, #4D5DFB 11.44%, #F907FC 80.77%);
+            @apply flex font-normal text-base px-9 py-5 lg:px-8 lg:py-5 rounded shadow-md;
+            background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
+            &:hover{
+                background: linear-gradient(85.26deg, #596afe 11.44%, #fc3aff 80.77%);
+             }
         }
-    }  
+        
+    } 
 }
-// &-btnIdea{
-//     @apply hidden md:inline-block absolute left-[90%]  top-[25%];
-// }  
+
 

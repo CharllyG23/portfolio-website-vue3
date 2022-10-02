@@ -12,7 +12,7 @@
             <div class="hero-subTitle">
               <p>Sou uma pessoa que adora criar coisas para a web. Uma desenvolvedora front-end motivada pela curiosidade com habilidades de design.</p>
             </div>
-            <div>
+            <div class="btn">
               <button>Download CV
                 <app-icons name="download" :size="24" class="ml-2"></app-icons>
               </button>
