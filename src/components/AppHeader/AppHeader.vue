@@ -21,12 +21,12 @@
                         <li class="lang"> 
                             <app-lang-selector/>
                         </li>
-                        <li>
+                        <!-- <li>
                             <button class="btn header-link">A-</button>
                         </li>
                         <li>
                             <button class="btn header-link" >A+</button>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
             </div>

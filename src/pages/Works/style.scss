@@ -1,30 +1,45 @@
 .pages{
+   .gridCards{
+    max-width: 1024px;
+    margin: 0 auto;
 
-    .cards{
-        @apply flex gap-10 justify-center;
+        &-cards{
+            @apply flex justify-between gap-8 flex-wrap;
 
-        &-contents{
-            @apply  p-6 max-w-xs rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700;
-            box-shadow: 0 10px 25px -15px #112240;
-            transition: transform 0.15s ease-out;
-            background-color: rgba(2, 13, 47, 0.5);
-            &:hover{
+            &-contents{
+                @apply  p-6 rounded-lg shadow-md dark:bg-gray-800;
+                box-shadow: 0 10px 25px -15px #112240;
                 transition: transform 0.15s ease-out;
-                transform: translateY(-7px);
-                box-shadow: 0 10px 25px -15px #020711;
-            }
+                background-color: rgba(2, 13, 47, 0.5);
+                flex-basis: calc(33% - 20px);
+                flex-grow: 1;
+                min-width: 280px;
+                &:hover{
+                    transition: transform 0.15s ease-out;
+                    transform: translateY(-7px);
+                    box-shadow: 0 10px 25px -15px #020711;
+                }
 
-            h5{
-                @apply mb-2 text-2xl font-semibold tracking-tight text-white;
-            }
+                h5{
+                    @apply mb-2 text-2xl font-semibold tracking-tight text-white;
+                }
 
-            p{
-                @apply mb-8 font-normal text-gray-400 dark:text-gray-400; 
-            }
+                p{
+                    @apply mb-8 font-normal text-base text-gray-400; 
+                }
 
-            &-tools{
-                @apply flex items-center gap-3 text-fuchsia-600;
+                &-tools{
+                    @apply flex items-center gap-3 text-fuchsia-600;
+                }
             }
+        }
+
+        @media screen and (max-width: 1024px){
+           .pages{
+                .gridCards{
+                    flex-basis: calc(50% - 20px);
+                }
+           }
         }
     }
     .repository{
