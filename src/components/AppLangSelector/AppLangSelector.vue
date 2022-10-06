@@ -1,8 +1,8 @@
 <template>
     <div>
         <select>
-            <option value="hola">Portugues</option>
-            <option value="hola3">Ingles</option>
+            <option value="hola">Pr</option>
+            <option value="hola3">Ing</option>
         </select>
     </div>
 </template>

@@ -21,35 +21,108 @@
                     </div>
                 </div>
             </div>
-            <div class="skill">
-                <h3>Habilidades e ferramentas</h3>
-                <p>Minha caixa de ferramentas e coisas que posso fazer</p>
-            </div>
-           <div class="iconsContainer">
-                <app-icons name="scss" :size="50"></app-icons>
-                <app-icons name="html" :size="50"></app-icons>
-                <app-icons name="css" :size="50"></app-icons>
-                <app-icons name="vue" :size="50"></app-icons>
-                <app-icons name="tailwind" :size="50"></app-icons>
-                <app-icons name="js" :size="50"></app-icons>
-                <app-icons name="vs-code" :size="50"></app-icons>
-                <app-icons name="xd" :size="50"></app-icons>
-                <app-icons name="git" :size="50"></app-icons>
-                <app-icons name="json" :size="50"></app-icons>
-                <app-icons name="npm" :size="50"></app-icons>
-                <app-icons name="bootstrap" :size="50"></app-icons>
-                <app-icons name="figma" :size="50"></app-icons>
-                <app-icons name="react" :size="50"></app-icons>
-                <app-icons name="rest-api" :size="50"></app-icons>
-                <app-icons name="git-cmd" :size="50"></app-icons>
-           </div>
             <div class="nowadays">
                 <h3>Atualmente trabalhando em:</h3>
                 <p>Melhorar minhas habilidades em JavaScript e estendendo a ideia de microservice <strong class="stress">{Microfrontend}</strong> 
                 para desenvolvimento frontend.</p>
-            </div>
+            </div>            
         </div>
         <!-- <app-letters :name="'CREATIVE'"/> -->
+
+        <section class="pages__wrapper">
+           <div class="pages__wrapper--contents">
+                <div class="pages__wrapper--skill">
+                    <h3>Skill & Tools</h3>
+                    <p>Minha caixa de ferramentas e coisas que posso fazer</p>
+                </div>
+                <div class="pages__wrapper--iconsContainer">
+                    <div class="text-center">
+                        <app-icons name="scss" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>Scss</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <app-icons name="html" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>Html</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <app-icons name="css" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>Css</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <app-icons name="vue" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>Vuejs</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <app-icons name="tailwind" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>Tailwind</span>
+                        </div>
+                    </div>
+                    <div class="text-center inline-block">
+                        <app-icons name="js" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <app-icons name="vs-code" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>VsCode</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <app-icons name="git" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <app-icons name="json" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>Json</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <app-icons name="npm" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>Npm</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <app-icons name="bootstrap" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <app-icons name="figma" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>Figma</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <app-icons name="react" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>Reactjs</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <app-icons name="rest-api" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>Rest Api</span>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </section>
     </div>  
 </template>
 <script setup>

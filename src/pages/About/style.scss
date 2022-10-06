@@ -83,23 +83,38 @@
         }    
     }
 
-    .skill{
-            @apply pt-11;
-
-        h3{
-        @apply text-2xl font-bold mb-5;
-        }
-    }
-
     .nowadays{
-        @apply pt-20 pb-5 text-base font-light w-full;
+        @apply pb-10 text-base font-light w-full max-w-2xl;
 
         h3{
             @apply text-2xl font-bold mb-5;
         }
     }
 
-    .iconsContainer{
-        @apply inline-flex relative flex-wrap min-h-full w-full lg:w-[685px] box-border items-center gap-4 lg:gap-8 pt-10 delay-200;
-    }       
+    &__wrapper{
+        @apply w-full h-full;
+        background: linear-gradient(55.26deg, #4456fa, #fb00ff 100%);
+
+        &--contents{
+            @apply  w-full max-w-6xl mx-auto text-center items-start pt-10 pb-20 px-9 pl-9 pr-9 relative overflow-hidden delay-200;
+        }
+
+        &--iconsContainer{
+            @apply inline-flex relative flex-wrap box-border items-center justify-center gap-10 lg:gap-20 pt-10 delay-200;
+            
+            svg{
+                display: inline;
+            }
+        }  
+
+        &--skill{
+            h3{
+            @apply text-3xl lg:text-5xl font-bold pb-7;
+            }
+
+            p{
+                @apply font-normal text-base mb-5;
+            }
+        }
+    }
  }
