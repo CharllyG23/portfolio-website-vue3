@@ -1,6 +1,6 @@
 <template>
-   <div id="experiences" class="pages">
-      <div class="pages-container">
+   <div id="experiences" class="pages ">
+      <div class="pages-container scroll-smooth">
          <h1 class="title">Experiências</h1>
          <div class="pages-container-content">
             <div class="steps">

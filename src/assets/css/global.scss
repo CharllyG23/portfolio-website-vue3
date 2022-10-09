@@ -1,10 +1,23 @@
 html, body {
     font-family: 'Charm';
     font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: #020D1E;
+    &::-webkit-scrollbar{
+        width: 10px;
+        background-color: #020D1E;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: #020D1E;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #021531; 
+        border-radius: 5px;
+    }
+    
 }
 .title{
     @apply font-bold text-4xl lg:text-5xl mb-16 whitespace-pre-wrap box-border max-w-full w-[360px] ;
@@ -16,7 +29,7 @@ body{
 }
 
 .pages{
-    @apply text-white w-full min-h-[75vh];
+    @apply text-white w-full min-h-[76vh];
 
     &-container{
         @apply  w-full max-w-6xl mx-auto items-start py-20 px-9 pl-9 pr-9 relative overflow-hidden delay-200;

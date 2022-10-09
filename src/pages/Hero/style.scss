@@ -1,33 +1,38 @@
 .pages{
-    .hero{
-        @apply pt-28 font-bold text-4xl md:text-6xl lg:text-7xl leading-10;
-
-        &-header{
-            @apply flex items-center font-bold text-4xl md:text-6xl lg:text-7xl;
+    &-wrapper{
+        @apply  w-full max-w-6xl mx-auto items-start py-20 px-9 pl-9 pr-9 relative overflow-hidden delay-200;
+        .hero{
+            @apply lg:flex lg:flex-row md:flex-col items-center justify-between;
         }
-        &-subTitle{
-            @apply w-full max-w-lg font-light text-base py-6 whitespace-normal delay-200;
-        }
-        &-degraded{
-            @apply font-bold text-[2.5rem] md:text-6xl lg:text-[80px] overflow-hidden whitespace-normal;
-            background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        button{
-            @apply flex font-normal text-base px-9 py-5 lg:px-8 lg:py-5 rounded;
-            background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
-            transition: all 0.3s ease;
-            box-shadow: 0px 3px 20px 3px #161a50;
-
-            &:hover{
-                padding: 20px 45px;
-                max-width: 270px;
-             }
-        }
+            .content{
+                @apply pt-28 font-bold text-4xl md:text-6xl lg:text-7xl leading-10 delay-200;
         
-    } 
+                &-header{
+                    @apply flex items-center font-bold text-4xl md:text-6xl lg:text-7xl;
+                }
+                &-subTitle{
+                    @apply w-full max-w-lg font-light text-base py-10 whitespace-normal delay-200;
+                }
+                &-degraded{
+                    @apply font-bold text-[2.5rem] md:text-6xl lg:text-7xl overflow-hidden whitespace-normal;
+                    background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+                button{
+                    @apply flex font-normal text-base px-9 py-5 lg:px-8 lg:py-5 rounded;
+                    background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
+                    transition: all 0.3s ease;
+                    box-shadow: 0px 3px 20px 3px #161a50;
+        
+                    &:hover{
+                        padding: 20px 45px;
+                        max-width: 270px;
+                    }
+                }
+        }
+    }
 }
 
 

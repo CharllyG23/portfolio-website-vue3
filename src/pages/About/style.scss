@@ -17,12 +17,9 @@
     .about-img{
         @apply max-w-[300px] relative;
         .wrapper{
+            @apply block relative w-full rounded-xl;
             box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
             transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-            display: block;
-            position: relative;
-            width: 100%;
-            border-radius: 12px;
             background-color: #F907FC;
 
             &:hover,
@@ -84,7 +81,7 @@
     }
 
     .nowadays{
-        @apply pb-10 text-base font-light w-full max-w-2xl;
+        @apply pb-10 pt-4 text-base font-light w-full max-w-2xl;
 
         h3{
             @apply text-2xl font-bold mb-5;

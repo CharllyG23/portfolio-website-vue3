@@ -10,14 +10,14 @@
                 </button>
             </div>
             <div class="logo" >
-              <a href="#home" class="logo">Charlly/></a>
+              <a href="#home" class="logo">&lt;Charlly></a>
             </div>
             <div class="nav">
                 <nav>
                     <ul class="navbar">
                         <li><a href="#about"  class="header-link">Sobre Mim</a></li>
                         <li><a href="#experiences" class="header-link">Experiências</a></li>
-                        <li><a href="#work" class="header-link">Trabalhos</a></li>
+                        <li><a href="#works" class="header-link">Trabalhos</a></li>
                         <li class="lang"> 
                             <app-lang-selector/>
                         </li>
