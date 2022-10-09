@@ -8,7 +8,7 @@
 
             &-contents{
                 @apply  p-6 rounded-lg shadow-md dark:bg-gray-800;
-                box-shadow: 0 10px 25px -15px #112240;
+                box-shadow: 0 10px 25px -15px #161a50;
                 transition: transform 0.15s ease-out;
                 background-color: rgba(2, 13, 47, 0.5);
                 flex-basis: calc(33% - 20px);
@@ -17,7 +17,7 @@
                 &:hover{
                     transition: transform 0.15s ease-out;
                     transform: translateY(-7px);
-                    box-shadow: 0 10px 25px -15px #020711;
+                    box-shadow: 0 10px 25px -15px #040e22;
                 }
 
                 h5{

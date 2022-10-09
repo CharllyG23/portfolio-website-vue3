@@ -93,10 +93,11 @@
 
     &__wrapper{
         @apply w-full h-full;
-        background: linear-gradient(55.26deg, #4456fa, #fb00ff 100%);
+        background: linear-gradient(90.12deg, #0B1EDA 0.11%, #F907FC 99.91%);
+        box-shadow: 0px 3px 20px 3px #161a50;
 
         &--contents{
-            @apply  w-full max-w-6xl mx-auto text-center items-start pt-10 pb-20 px-9 pl-9 pr-9 relative overflow-hidden delay-200;
+            @apply  w-full max-w-6xl mx-auto text-center items-start pt-10 pb-20 px-8 lg:px-12 relative overflow-hidden delay-200;
         }
 
         &--iconsContainer{

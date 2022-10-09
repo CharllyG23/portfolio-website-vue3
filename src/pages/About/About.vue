@@ -49,21 +49,15 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <app-icons name="css" :size="50"></app-icons>
-                        <div class="pt-3">
-                            <span>Css</span>
-                        </div>
-                    </div>
-                    <div class="text-center">
                         <app-icons name="vue" :size="50"></app-icons>
                         <div class="pt-3">
                             <span>Vuejs</span>
                         </div>
                     </div>
                     <div class="text-center">
-                        <app-icons name="tailwind" :size="50"></app-icons>
+                        <app-icons name="css" :size="50"></app-icons>
                         <div class="pt-3">
-                            <span>Tailwind</span>
+                            <span>Css</span>
                         </div>
                     </div>
                     <div class="text-center inline-block">
@@ -73,15 +67,33 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <app-icons name="vs-code" :size="50"></app-icons>
+                        <app-icons name="react" :size="50"></app-icons>
                         <div class="pt-3">
-                            <span>VsCode</span>
+                            <span>Reactjs</span>
                         </div>
                     </div>
                     <div class="text-center">
                         <app-icons name="git" :size="50"></app-icons>
                         <div class="pt-3">
                             <span>GitHub</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <app-icons name="bootstrap" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <app-icons name="tailwind" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>Tailwind</span>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <app-icons name="vs-code" :size="50"></app-icons>
+                        <div class="pt-3">
+                            <span>VsCode</span>
                         </div>
                     </div>
                     <div class="text-center">
@@ -97,23 +109,12 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <app-icons name="bootstrap" :size="50"></app-icons>
-                        <div class="pt-3">
-                            <span>Bootstrap</span>
-                        </div>
-                    </div>
-                    <div class="text-center">
                         <app-icons name="figma" :size="50"></app-icons>
                         <div class="pt-3">
                             <span>Figma</span>
                         </div>
                     </div>
-                    <div class="text-center">
-                        <app-icons name="react" :size="50"></app-icons>
-                        <div class="pt-3">
-                            <span>Reactjs</span>
-                        </div>
-                    </div>
+
                     <div class="text-center">
                         <app-icons name="rest-api" :size="50"></app-icons>
                         <div class="pt-3">
