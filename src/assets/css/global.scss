@@ -20,19 +20,19 @@ body{
     
 }
 .title{
-    @apply font-bold text-4xl lg:text-5xl mb-16 whitespace-pre-wrap box-border max-w-full w-[360px] ;
+    @apply font-bold text-4xl lg:text-5xl mb-8 whitespace-pre-wrap box-border max-w-full w-[360px] ;
     color: #4D5DFB;  
 }
 
 .subTitle{
-    @apply text-center w-full max-w-[31.125rem] mx-auto text-base text-white font-normal mb-14 lg:text-[20px] lg:leading-9;
+    @apply text-center w-full max-w-[31.125rem] mx-auto text-base text-white font-normal mb-14 pt-5 lg:text-[20px] lg:leading-9;
 }
 
 .pages{
     @apply text-white w-full min-h-[76vh];
 
     &-container{
-        @apply  w-full max-w-6xl mx-auto items-start py-20 px-9 pl-9 pr-9 relative overflow-hidden delay-200;
+        @apply  w-full max-w-7xl mx-auto items-start py-20 px-9 pl-9 pr-9 relative overflow-hidden delay-200;
 
         &-content{
             @apply block lg:flex flex-col lg:flex-row justify-between items-center w-full;

@@ -1,9 +1,0 @@
-.letters{
-    @apply w-full hidden lg:flex items-center;
-    
-    p{
-        @apply justify-center xl:top-[220px] left-0 font-bold tracking-wide  absolute;
-        color: rgba(119, 140, 168, 0.05);
-        font-size: 30vh;;
-    }
-}

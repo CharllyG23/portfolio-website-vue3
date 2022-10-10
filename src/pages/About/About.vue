@@ -27,8 +27,6 @@
                 para desenvolvimento frontend.</p>
             </div>            
         </div>
-        <!-- <app-letters :name="'CREATIVE'"/> -->
-
         <section class="pages__wrapper">
            <div class="pages__wrapper--contents">
                 <div class="pages__wrapper--skill">
@@ -127,7 +125,6 @@
     </div>  
 </template>
 <script setup>
-// import AppLetters from '../../components/AppLetters/AppLetters.vue';
 import imageDefault from '../../assets/img/img-perfil.png'
 import AppIcons from '../../components/AppIcons/AppIcons.vue';
 </script>
