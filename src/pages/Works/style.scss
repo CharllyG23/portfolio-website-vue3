@@ -4,14 +4,14 @@
     margin: 0 auto;
 
         &-cards{
-            @apply flex justify-between gap-8 flex-wrap;
+            @apply flex justify-between gap-12 flex-wrap;
 
             &-contents{
                 @apply  p-6 rounded-lg shadow-md dark:bg-gray-800;
                 box-shadow: 0 10px 25px -15px #161a50;
                 transition: transform 0.15s ease-out;
                 background-color: rgba(2, 13, 47, 0.5);
-                flex-basis: calc(33% - 20px);
+                flex-basis: calc(33% - 50px);
                 flex-grow: 1;
                 min-width: 280px;
                 &:hover{
@@ -37,7 +37,7 @@
         @media screen and (max-width: 1024px){
            .pages{
                 .gridCards{
-                    flex-basis: calc(50% - 20px);
+                    flex-basis: calc(50% - 50px);
                 }
            }
         }

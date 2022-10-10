@@ -1,38 +1,86 @@
 .pages{
     &-wrapper{
-        @apply  w-full max-w-6xl mx-auto items-start py-20 px-9 pl-9 pr-9 relative overflow-hidden delay-200;
+        @apply  w-full max-w-7xl mx-auto items-start py-20 px-9 pl-9 pr-9 relative overflow-hidden  transition-all duration-200;
         .hero{
-            @apply lg:flex lg:flex-row md:flex-col items-center justify-between;
+            @apply lg:flex lg:justify-between lg:items-center  transition-all duration-200;
+
+            &-svg{
+                @media screen and (max-width: 1024px ) {
+                    @apply hidden;
+                }
+            }
         }
-            .content{
-                @apply pt-28 font-bold text-4xl md:text-6xl lg:text-7xl leading-10 delay-200;
-        
-                &-header{
-                    @apply flex items-center font-bold text-4xl md:text-6xl lg:text-7xl;
+        .content{
+            @apply pt-24 font-bold text-4xl md:text-6xl lg:text-7xl leading-10  transition-all duration-200;
+    
+            &-header{
+                @apply flex items-center font-bold text-4xl md:text-6xl lg:text-7xl  transition-all duration-200;
+            }
+            &-subTitle{
+                @apply w-full max-w-lg font-light text-base py-10 whitespace-normal  transition-all duration-200;
+            }
+            &-degraded{
+                @apply font-bold text-[2.5rem] md:text-6xl lg:text-[76px] overflow-hidden whitespace-normal  transition-all duration-200;
+                background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+            button{
+                @apply flex font-normal text-base px-9 py-5 lg:px-8 lg:py-5 rounded;
+                background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
+                transition: all 0.3s ease;
+                box-shadow: 0px 3px 20px 3px #161a50;
+    
+                &:hover{
+                    padding: 20px 45px;
+                    max-width: 270px;
                 }
-                &-subTitle{
-                    @apply w-full max-w-lg font-light text-base py-10 whitespace-normal delay-200;
-                }
-                &-degraded{
-                    @apply font-bold text-[2.5rem] md:text-6xl lg:text-7xl overflow-hidden whitespace-normal;
-                    background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                }
-                button{
-                    @apply flex font-normal text-base px-9 py-5 lg:px-8 lg:py-5 rounded;
-                    background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
-                    transition: all 0.3s ease;
-                    box-shadow: 0px 3px 20px 3px #161a50;
-        
-                    &:hover{
-                        padding: 20px 45px;
-                        max-width: 270px;
-                    }
-                }
+            }
+        }
+    }
+
+    .icons{
+        width: 40px;
+        position: fixed;
+        bottom: 0px;
+        left: 95%;
+        right: auto;
+        z-index: 10;
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            &::after {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 50px;
+                margin: 0px auto;
+                background-color: rgba(165, 169, 251, 0.8);
+            }
+        }
+        li{
+            padding: 10px;
+        }
+
+        a{
+            display: inline-block;
+            text-decoration: none;
+            text-decoration-skip-ink: auto;
+            color: inherit;
+            position: relative;
+            transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+        }
+
+        @media screen and (max-width: 900px ) {
+            @apply hidden;
         }
     }
 }
-
-
+    

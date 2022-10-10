@@ -22,11 +22,19 @@
           </div>
         </div>
       </div> 
-        <!-- <div class="hero-container-socialIcons">
-            <a href="#"><app-icons name="git-hub" :size="18"></app-icons></a>
-              <a href="#"><app-icons name="instagram" :size="18"></app-icons></a>
-              <a href="#"><app-icons name="linkedin" :size="18"></app-icons></a>
-            </div> -->
+    </div>
+    <div class="icons">
+      <ul>
+        <li>
+          <a href="#"><app-icons name="git-hub" :size="25"></app-icons></a>
+        </li>
+        <li>
+          <a href="#"><app-icons name="linkedin" :size="25"></app-icons></a>
+        </li>
+        <li>
+          <a href="#"><app-icons name="instagram" :size="25"></app-icons></a>
+        </li>
+      </ul>   
     </div>
   </section>
 </template>
