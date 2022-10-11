@@ -5,12 +5,25 @@
         @apply  w-full max-w-7xl mx-auto items-start py-20 px-9 pl-9 pr-9 relative overflow-hidden delay-200;
 
         &-info{
-            @apply flex justify-between items-center;
+            @apply lg:flex lg:flex-row flex-col lg:justify-between justify-center items-center;
             &-subTitle{
-                @apply text-base font-normal w-full max-w-xs space-y-8;
+                @apply text-base font-normal w-full  max-w-xs space-y-8;
             }
             &-email{
                 @apply lg:pr-9;
+
+                .iconEmail{
+                    @apply flex items-center pb-3;
+                }
+
+                h2{
+                    @apply font-bold lg:text-3xl text-xl;
+                    text-decoration-line: underline;
+                    background: linear-gradient(90deg, #F907FC 0%, #4D5DFB 97.33%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
             }
         }
     }

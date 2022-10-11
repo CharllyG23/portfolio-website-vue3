@@ -1,6 +1,6 @@
 <template>
     <header :class="{ 'show': show, 'pre-show': preShow, 'scroll': scroll }">
-        <div class="header">
+        <div class="header" ref="header">
             <div class="nav-button">
                 <button v-if="show" @click="toggleMenu">
                   <app-icons name="close" :size="28"></app-icons>
@@ -18,15 +18,12 @@
                         <li><a href="#about"  class="header-link">Sobre Mim</a></li>
                         <li><a href="#experiences" class="header-link">Experiências</a></li>
                         <li><a href="#works" class="header-link">Trabalhos</a></li>
+                        <li>
+                            <a href="#contact" class="header-link">Contate-me</a>
+                        </li>
                         <li class="lang"> 
                             <app-lang-selector/>
-                        </li>
-                        <!-- <li>
-                            <button class="btn header-link">A-</button>
-                        </li>
-                        <li>
-                            <button class="btn header-link" >A+</button>
-                        </li> -->
+                        </li> 
                     </ul>
                 </nav>
             </div>
@@ -34,7 +31,7 @@
     </header>
 </template>
 <script setup>
-import { ref, onMounted} from 'vue'
+import { ref, onMounted, onBeforeUnmount, watchEffect } from 'vue'
 import AppLangSelector from '../AppLangSelector/AppLangSelector.vue';
 import AppIcons from '../AppIcons/AppIcons.vue';
 
@@ -42,6 +39,7 @@ const scroll = ref(false)
 const show = ref(false)
 const preShow = ref(false)
 const lg = ref(false)
+const header = ref(null)
 
 let throttle = false,
 scrollPosition = window.scrollY
@@ -59,6 +57,15 @@ const toggleMenu = () => {
 const onResize = () => {
     lg.value = window.innerWidth >= 1024
 }
+
+onMounted(() => {
+    const body = document.querySelector('body')
+    const anchors = [...header.value.querySelectorAll('a') ]
+    anchors.forEach(anchor => {
+        anchor.addEventListener('click', () => show.value = false, body.style.overflow = '')
+    })
+    
+})
 
 const setHeaderHeight = () => {
     scroll.value = scrollPosition > 48
@@ -79,6 +86,11 @@ const onScroll = () => {
 onMounted(() => {
     window.addEventListener('resize', onResize)
     window.addEventListener('scroll', onScroll)
+})
+
+onBeforeUnmount(() => {
+    window.removeEventListener('resize', onResize)
+    window.removeEventListener('scroll', onScroll)
 })
 
 </script>

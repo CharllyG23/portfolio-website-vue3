@@ -1,6 +1,6 @@
 <template>    
     <footer>
-        <div class="footer">
+        <div id="contact" class="footer">
             <div class="footer-container">
                 <h2 class="title">Vamos conversar?</h2>
                 <div class="footer-container-info">
@@ -12,7 +12,11 @@
                         </div>
                     </div>
                     <div class="footer-container-info-email">
-                        bvfdhbdhbdfhdfhdfhdfhdfh
+                        <div class="iconEmail">
+                            <app-icons name="email" class="mr-3" :size="25"/>
+                            <span>Mande-me um email</span>
+                        </div>
+                        <h2>charllyfiguera21@gmail.com</h2>
                     </div>
                 </div>
             </div>
