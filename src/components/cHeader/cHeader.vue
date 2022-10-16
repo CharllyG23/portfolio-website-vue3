@@ -74,5 +74,5 @@ onMounted(() => {
 
 </script>
 <style lang="scss" scoped>
-@import './style.scss';
+@import './cHeader-style.scss';
 </style>

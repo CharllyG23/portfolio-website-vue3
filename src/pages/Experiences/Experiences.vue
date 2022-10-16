@@ -41,5 +41,5 @@ const steps = [
 ]
 </script>
 <style lang="scss" scoped>
-@import './style.scss';
+@import './experiences-style.scss';
 </style>

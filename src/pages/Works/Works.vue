@@ -43,5 +43,5 @@ import AppIcons from '../../components/AppIcons/AppIcons.vue';
 </script>
 
 <style lang="scss" scoped>
-@import './style.scss';
+@import './work-style.scss';
 </style>

@@ -1,0 +1,87 @@
+.pages{            
+    .steps {
+        @apply lg:pt-16 w-full mx-auto;
+
+        &__list {
+            @apply 
+                max-w-sm
+                w-full
+                space-y-2
+                mx-auto
+                lg:space-y-0
+                lg:flex
+                lg:items-start
+                lg:max-w-7xl
+                lg:justify-between
+                lg:relative
+                lg:before:content-['']
+                lg:before:absolute
+                lg:before:h-[1px]
+                lg:before:bg-blue-200
+                lg:before:top-3
+                lg:before:left-[10rem]
+                lg:before:right-[10rem];
+            
+            &--item {
+                @apply 
+                    flex
+                    items-start
+                    gap-2
+                    relative
+                    min-h-[10rem]
+                    after:content-['']
+                    after:absolute
+                    after:bottom-0
+                    after:top-9
+                    after:left-[13px]
+                    after:w-[1px]
+                    after:rounded-sm
+                    after:bg-blue-200
+                    lg:after:hidden
+                    lg:flex-col
+                    lg:gap-2
+                    lg:items-center
+                    lg:w-[20rem]
+                    xl:w-[20rem];
+            
+                @media screen and (min-width: 1024px) {
+                    min-height: unset;
+                }
+    
+                &:last-child {
+                    min-height: unset;
+    
+                    @apply after:hidden;
+                }
+    
+                span {
+                    @apply w-[1.875rem]
+                    h-[1.875rem]
+                    inline-flex
+                    justify-center
+                    items-center
+                    text-white
+                    flex-none
+                    text-base
+                    font-semibold
+                    rounded-full;
+                    background: linear-gradient(55.26deg, #4456fa, #fb00ff 100%);
+                }
+    
+                &__info{
+                @apply ml-4;
+                    .__titleInfo {
+                        @apply text-base font-semibold pt-0.5 lg:text-center;
+                        color: #4D5DFB;
+                    }
+                    .__timeInfo {
+                        @apply text-xs text-slate-400 pt-0.5 lg:text-center;
+                    }
+                    .__subTitleInfo {
+                        @apply text-sm text-white pt-3 lg:text-center;
+                    }
+                }
+            }
+        }
+    } 
+}

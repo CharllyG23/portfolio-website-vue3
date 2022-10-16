@@ -42,5 +42,5 @@
 import AppIcons from '../../components/AppIcons/AppIcons.vue';
 </script>
 <style lang="scss" scoped>
-  @import './style.scss';
+  @import './/hero-style.scss';
 </style>

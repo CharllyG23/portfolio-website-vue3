@@ -61,5 +61,5 @@ const copyEmail = () => {
 }
 </script>
 <style lang="scss" scoped>
-@import './style';
+@import './cFooter-style.scss';
 </style>

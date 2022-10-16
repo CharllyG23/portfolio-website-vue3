@@ -129,5 +129,5 @@ import imageDefault from '../../assets/img/img-perfil.png'
 import AppIcons from '../../components/AppIcons/AppIcons.vue';
 </script>
 <style lang="scss" scoped>
-@import './style.scss';
+@import './about-style.scss';
 </style>
