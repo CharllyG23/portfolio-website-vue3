@@ -20,11 +20,10 @@
                                 <span>Mande-me um email</span>
                            </div>
                         </div>
-                        <div @click="copyEmail">
+                        <div @click="openToast">
                             <h2>{{ email }}</h2>
                         </div>
                     </div>
-                    <div id="toast"></div>
                 </div>
             </div>
             <div class="footer-socials">
@@ -37,28 +36,26 @@
             </div>
             <div class="footer-line"></div>
         </div>
+        <c-toast v-model="toastVisible"></c-toast>
     </footer>
+    
 </template>
 <script setup>
 import { ref } from 'vue'
 import AppIcons from '../AppIcons/AppIcons.vue'
+import cToast from '../cToast/cToast.vue';
 
 const email = ref('charllyfiguera21@gmail.com')
-// const show = ref(false)
+const toastVisible = ref(false)
 
-// function showToast(text){
-//   var x=document.getElementById("toast");
-//   x.classList.add("show");
-//   x.innerHTML=text;
-//   setTimeout(function(){
-//     x.classList.remove("show");
-//   },3000);
-// }
-
-const copyEmail = () => {
-	navigator.clipboard.writeText(email.value)
-	console.log('email copiado!')
+const openToast = () => {
+    toastVisible.value = true
+    navigator.clipboard.writeText(email.value)
+    setTimeout(() => {
+        toastVisible.value = false
+    }, 3000)
 }
+
 </script>
 <style lang="scss" scoped>
 @import './cFooter-style.scss';

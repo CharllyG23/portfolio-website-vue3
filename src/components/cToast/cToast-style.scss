@@ -1,0 +1,26 @@
+.toast{
+    @apply fixed top-2.5 bg-blue-700 text-white text-sm z-50 rounded w-44 h-12 left-1/2;
+    
+    &-content{
+        @apply flex items-center justify-between p-[15px];
+    }
+}
+
+
+  .bounce-enter-active {
+    animation: bounce-in 0.5s;
+  }
+  .bounce-leave-active {
+    animation: bounce-in 0.5s reverse;
+  }
+  @keyframes bounce-in {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.25);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

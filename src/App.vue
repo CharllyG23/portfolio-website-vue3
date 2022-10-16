@@ -1,16 +1,16 @@
 <template>
   <c-header></c-header>
-    <hero />
-    <about />
-    <experiences />
-    <works />
+    <c-hero />
+    <c-about />
+    <c-experiences />
+    <c-works />
   <c-footer></c-footer>
 </template>
 <script setup>
 import cHeader from './components/cHeader/cHeader.vue';
 import cFooter from './components/cFooter/cFooter.vue';
-import Hero from './pages/Hero/Hero.vue';
-import About from './pages/About/About.vue';
-import Works from './pages/Works/Works.vue';
-import Experiences from './pages/Experiences/Experiences.vue';
+import cHero from './pages/cHero/cHero.vue';
+import cAbout from './pages/cAbout/cAbout.vue';
+import cWorks from './pages/cWorks/cWorks.vue';
+import cExperiences from './pages/cExperiences/cExperiences.vue';
 </script>

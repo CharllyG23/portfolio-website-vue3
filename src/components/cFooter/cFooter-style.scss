@@ -30,10 +30,8 @@
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
                 &:hover{
-                    background: linear-gradient(90.12deg, #3d4de0 0.11%, #ec55ef 99.91%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
+                    transition: all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1);
+                    transform: translateY(-4px);
                 }
             }
             &-icon{
@@ -64,29 +62,4 @@
         background: linear-gradient(90.12deg, #0B1EDA 0.25%, #F907FC 80.91%);
     }
 
-    #toast{
-        position:fixed;
-        top:0;
-        left:50%;
-        transform:translate(-50%);
-        background-color:#000;
-        color:#fff;
-        padding:16px;
-        border-radius:4px;
-        text-align:center;
-        z-index: 50;
-        box-shadow:0 0 20px rgba(0,0,0,0.3);
-        visibility:hidden;
-        opacity:0;
-      }
-      
-      #toast.show{
-        visibility:visible;
-        animation:fadeInOut 3s;
-      }
-      
-      @keyframes fadeInOut{
-        5%,95%{opacity:1;top:50px}
-        15%,85%{opacity:1;top:30px}
-      }
 }
