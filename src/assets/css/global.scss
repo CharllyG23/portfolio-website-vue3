@@ -16,12 +16,10 @@ body{
     &::-webkit-scrollbar-thumb{
         background-color: #021531; 
         border-radius: 5px;
-    }
-    
+    } 
 }
 .title{
-    @apply font-bold text-4xl lg:text-5xl mb-8 whitespace-pre-wrap box-border max-w-full w-[360px] ;
-    color: #4D5DFB;  
+    @apply font-bold text-4xl lg:text-5xl mb-8 whitespace-pre-wrap box-border max-w-full w-[360px] text-primary ;
 }
 
 .subTitle{

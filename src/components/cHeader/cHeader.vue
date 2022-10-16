@@ -10,7 +10,7 @@
                 </button>
             </div>
             <div class="logo" >
-              <a href="#home" class="logo">&lt;Charlly></a>
+              <a href="#home" class="logo">&lt;ch></a>
             </div>
             <div class="nav">
                 <nav>

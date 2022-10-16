@@ -29,7 +29,7 @@
                 }
 
                 &-tools{
-                    @apply flex items-center gap-3 text-fuchsia-600;
+                    @apply flex items-center gap-3 text-secondary;
                 }
             }
         }
@@ -43,6 +43,6 @@
         }
     }
     .repository{
-        @apply flex items-center justify-center text-fuchsia-600 font-medium text-lg py-10;
+        @apply flex items-center justify-center text-secondary font-medium text-lg py-10;
     }
 }

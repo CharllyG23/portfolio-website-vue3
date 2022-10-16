@@ -71,8 +71,7 @@
                 &__info{
                 @apply ml-4;
                     .__titleInfo {
-                        @apply text-base font-semibold pt-0.5 lg:text-center;
-                        color: #4D5DFB;
+                        @apply text-base font-semibold pt-0.5 lg:text-center text-primary;;
                     }
                     .__timeInfo {
                         @apply text-xs text-slate-400 pt-0.5 lg:text-center;

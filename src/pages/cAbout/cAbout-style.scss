@@ -1,14 +1,11 @@
  .pages{
     .stress{
-        color: #F907FC;
-        font-weight: 700;
+        @apply text-secondary font-bold;
     }
     .info{
         @apply whitespace-normal w-full lg:max-w-2xl gap-8 lg:items-center;
         span {
-            @apply text-lg font-extrabold;
-            color: #F907FC;
-            font-family: 'Charm';
+            @apply text-lg font-extrabold text-secondary;
         }
         p{
             @apply w-full flex-wrap text-base font-light py-3;
@@ -17,10 +14,9 @@
     .about-img{
         @apply max-w-[300px] relative lg:pr-12;
         .wrapper{
-            @apply block relative w-full rounded-xl;
+            @apply block relative w-full rounded-xl text-secondary;
             box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
             transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-            background-color: #F907FC;
 
             &:hover,
             &:focus {
@@ -56,17 +52,11 @@
             }
 
             &:before {
-                top: 0;
-                left: 0;
-                background-color: #F907FC;
-                mix-blend-mode: screen;
+                @apply top-0 left-0 bg-secondary mix-blend-screen;
             }
 
             &:after {
-                border: 2px solid #F907FC;
-                top: 20px;
-                left: 20px;
-                z-index: -1;
+                @apply top-5 left-5 -z-10 border-secondary border-[2px];
             }
     }
 }    

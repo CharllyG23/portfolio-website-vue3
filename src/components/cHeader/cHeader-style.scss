@@ -39,16 +39,10 @@ header {
     .nav-button {
         @apply pl-7 pt-4 lg:hidden;
     }
-    .btn{
-        color: #4D5DFB;
-        font-family: 'Charm';
-        font-weight: 700;
-        font-size: 24px;
-    }
+
     .logo {
-        @apply h-6 flex lg:h-11 font-bold text-3xl absolute left-1/2  transform -translate-x-1/2 lg:static lg:transform-none;
-        color: #4D5DFB;
-        font-family: 'Charm';
+        @apply h-6 flex lg:h-11 font-bold text-3xl absolute left-1/2  transform -translate-x-1/2 lg:static lg:transform-none text-primary;
+        
         a{
             @apply items-center h-full flex mt-4 lg:mt-0;
         }
