@@ -17,7 +17,7 @@
                 @apply flex items-center font-bold text-4xl md:text-6xl lg:text-7xl  transition-all duration-200;
             }
             &-subTitle{
-                @apply w-full max-w-lg font-light text-base py-10 whitespace-normal  transition-all duration-200;
+                @apply w-full max-w-md font-light text-base py-10 whitespace-normal  transition-all duration-200;
             }
             &-degraded{
                 @apply font-bold text-[2.5rem] md:text-6xl lg:text-[76px] overflow-hidden whitespace-normal  transition-all duration-200;

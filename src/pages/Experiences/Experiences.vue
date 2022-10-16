@@ -30,7 +30,7 @@ const steps = [
 	},
    {
 		title: 'A&M Solutions',
-		time: 'Julho 2021 - setembro 2021',
+		time: 'Julho 2021 - Setembro 2021',
       subTitle: 'Trabalhei principalmente para garantir experiências de usuário satisfatórias e consistência de projeto que os clientes precisam no ReactJs e Bootstrap.',
 	},
    {

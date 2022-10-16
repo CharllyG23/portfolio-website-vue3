@@ -1,0 +1,92 @@
+.footer{
+    @apply text-white w-full h-full;
+
+    &-container{
+        @apply  w-full max-w-7xl mx-auto items-start py-20 px-9 pl-9 pr-9 relative overflow-hidden transition delay-200;
+
+        &-titleF{
+            @apply font-bold text-4xl lg:text-5xl lg:text-left text-center mb-8 whitespace-pre-wrap box-border max-w-full lg:w-[360px] transition delay-200;
+                color: #4D5DFB;  
+        }
+
+        &-info{
+            @apply lg:flex lg:flex-row flex-col lg:justify-between justify-center items-center transition delay-200; 
+            &-subTitle{
+                @apply text-base font-normal text-center lg:text-left whitespace-pre-wrap w-full lg:max-w-xs space-y-8 transition delay-200;
+            }
+        }
+
+        &-email{
+            @apply text-center lg:text-left space-y-3 lg:pr-9;
+
+            .iconEmail{
+                @apply flex items-center pb-3 transition delay-200;
+            }
+
+            h2{
+                @apply font-bold lg:text-3xl text-lg md:text-xl cursor-pointer transition delay-200 w-full overflow-hidden;
+                background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                &:hover{
+                    background: linear-gradient(90.12deg, #3d4de0 0.11%, #ec55ef 99.91%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                }
+            }
+            &-icon{
+                @apply inline-block text-center lg:flex mt-6;
+            }
+        }
+
+        &-location{
+            @apply inline-block text-center lg:flex mt-6;
+        }
+    }
+    &-socials{
+        @apply justify-center text-center pb-3 lg:pt-14 w-full px-4;
+
+        &-icons{
+            @apply mb-3 lg:hidden;
+            svg{
+                @apply inline-block text-center first-line:flex-row;
+            }
+        }
+        span{
+            @apply text-xs lg:text-sm font-normal text-gray-400;
+        }
+    }
+
+    &-line{
+        @apply w-full h-2 absolute;
+        background: linear-gradient(90.12deg, #0B1EDA 0.25%, #F907FC 80.91%);
+    }
+
+    #toast{
+        position:fixed;
+        top:0;
+        left:50%;
+        transform:translate(-50%);
+        background-color:#000;
+        color:#fff;
+        padding:16px;
+        border-radius:4px;
+        text-align:center;
+        z-index: 50;
+        box-shadow:0 0 20px rgba(0,0,0,0.3);
+        visibility:hidden;
+        opacity:0;
+      }
+      
+      #toast.show{
+        visibility:visible;
+        animation:fadeInOut 3s;
+      }
+      
+      @keyframes fadeInOut{
+        5%,95%{opacity:1;top:50px}
+        15%,85%{opacity:1;top:30px}
+      }
+}
