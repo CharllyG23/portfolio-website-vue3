@@ -17,7 +17,7 @@
                         <div class="footer-container-email-icon">
                            <div class="flex items-center">
                                 <app-icons name="email" class="mr-3" :size="25"/>
-                                <span>Mande-me um email</span>
+                                <span>Clique e envie um e-mail</span>
                            </div>
                         </div>
                         <div @click="openToast">

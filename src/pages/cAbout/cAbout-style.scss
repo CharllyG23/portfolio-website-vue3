@@ -88,7 +88,7 @@
         }
 
         &--iconsContainer{
-            @apply inline-flex relative flex-wrap box-border items-center justify-center gap-10 lg:gap-20 pt-10 delay-200;
+            @apply inline-flex relative flex-wrap box-border items-center justify-center gap-8 lg:gap-20 pt-10 delay-200;
             
             svg{
                 display: inline;

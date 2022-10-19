@@ -35,86 +35,86 @@
                 </div>
                 <div class="pages__wrapper--iconsContainer">
                     <div class="text-center">
-                        <app-icons name="scss" :size="60"></app-icons>
+                        <app-icons name="scss" :size="45"></app-icons>
                         <div class="pt-3">
                             <span>Scss</span>
                         </div>
                     </div>
                     <div class="text-center">
-                        <app-icons name="html" :size="60"></app-icons>
+                        <app-icons name="html" :size="45"></app-icons>
                         <div class="pt-3">
                             <span>Html</span>
                         </div>
                     </div>
                     <div class="text-center">
-                        <app-icons name="vue" :size="60"></app-icons>
+                        <app-icons name="vue" :size="45"></app-icons>
                         <div class="pt-3">
                             <span>Vuejs</span>
                         </div>
                     </div>
                     <div class="text-center">
-                        <app-icons name="css" :size="60"></app-icons>
+                        <app-icons name="css" :size="45"></app-icons>
                         <div class="pt-3">
                             <span>Css</span>
                         </div>
                     </div>
                     <div class="text-center inline-block">
-                        <app-icons name="js" :size="60"></app-icons>
+                        <app-icons name="js" :size="45"></app-icons>
                         <div class="pt-3">
                             <span>JavaScript</span>
                         </div>
                     </div>
                     <div class="text-center">
-                        <app-icons name="react" :size="60"></app-icons>
+                        <app-icons name="react" :size="45"></app-icons>
                         <div class="pt-3">
                             <span>Reactjs</span>
                         </div>
                     </div>
                     <div class="text-center">
-                        <app-icons name="git" :size="55"></app-icons>
+                        <app-icons name="git" :size="40"></app-icons>
                         <div class="pt-3">
                             <span>GitHub</span>
                         </div>
                     </div>
                     <div class="text-center">
-                        <app-icons name="bootstrap" :size="60"></app-icons>
+                        <app-icons name="bootstrap" :size="45"></app-icons>
                         <div class="pt-3">
                             <span>Bootstrap</span>
                         </div>
                     </div>
                     <div class="text-center">
-                        <app-icons name="tailwind" :size="60"></app-icons>
+                        <app-icons name="tailwind" :size="45"></app-icons>
                         <div class="pt-3">
                             <span>Tailwind</span>
                         </div>
                     </div>
                     <div class="text-center">
-                        <app-icons name="vs-code" :size="60"></app-icons>
+                        <app-icons name="vs-code" :size="45"></app-icons>
                         <div class="pt-3">
                             <span>VsCode</span>
                         </div>
                     </div>
                     <div class="text-center">
-                        <app-icons name="json" :size="60"></app-icons>
+                        <app-icons name="json" :size="45"></app-icons>
                         <div class="pt-3">
                             <span>Json</span>
                         </div>
                     </div>
                     <div class="text-center">
-                        <app-icons name="npm" :size="60"></app-icons>
+                        <app-icons name="npm" :size="45"></app-icons>
                         <div class="pt-3">
                             <span>Npm</span>
                         </div>
                     </div>
                     <div class="text-center">
-                        <app-icons name="figma" :size="60"></app-icons>
+                        <app-icons name="figma" :size="45"></app-icons>
                         <div class="pt-3">
                             <span>Figma</span>
                         </div>
                     </div>
 
                     <div class="text-center">
-                        <app-icons name="rest-api" :size="55"></app-icons>
+                        <app-icons name="rest-api" :size="45"></app-icons>
                         <div class="pt-3">
                             <span>Rest Api</span>
                         </div>

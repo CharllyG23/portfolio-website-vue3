@@ -20,7 +20,7 @@
                         <li><a href="#works" class="header-link">Trabalhos</a></li>
                         <li><a href="#contact" class="header-link">Contate-me</a></li>
                         <li class="header-link">
-                            <c-lang-selector/>
+                            <!-- <c-lang-selector/> -->
                         </li>
                     </ul>    
                 </nav>
