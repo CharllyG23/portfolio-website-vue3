@@ -1,9 +1,5 @@
 .toast{
-    @apply fixed top-2.5 bg-primary text-white text-sm z-50 rounded w-44 h-12 left-1/2;
-    
-    &-content{
-        @apply flex items-center justify-between p-[15px];
-    }
+    @apply fixed top-2.5 bg-primary text-center text-white text-sm z-50 rounded w-32 p-3 left-1/2;
 }
 
 .bounce-enter-active {
@@ -13,13 +9,13 @@ animation: bounce-in 0.5s;
 animation: bounce-in 0.5s reverse;
 }
 @keyframes bounce-in {
-0% {
-    transform: scale(0);
-}
-50% {
-    transform: scale(1.25);
-}
-100% {
-    transform: scale(1);
-}
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1);
+    }
 }

@@ -18,7 +18,7 @@ header {
 
 
     .header-link {
-      @apply px-3 text-lg inline-block transition-all duration-200 relative lg:px-0 lg:text-sm text-white focus:outline-none;
+      @apply px-3 text-lg inline-block transition-all duration-200 relative lg:px-0 lg:text-base font-normal text-white focus:outline-none;
     }
 
     .nav {
@@ -34,6 +34,15 @@ header {
                     @apply py-3 relative lg:py-0;
                 }
             }
+
+            // .lang {
+            //     @apply
+            //         mt-auto
+            //         mb-8
+            //         flex
+            //         flex-col
+            //         items-center
+            // }
         }
     }
     .nav-button {
@@ -41,7 +50,7 @@ header {
     }
 
     .logo {
-        @apply h-6 flex lg:h-11 font-bold text-3xl absolute left-1/2  transform -translate-x-1/2 lg:static lg:transform-none text-primary;
+        @apply h-6 flex lg:h-11 font-bold text-3xl absolute left-1/2 transform -translate-x-1/2 lg:static lg:transform-none text-primary;
         
         a{
             @apply items-center h-full flex mt-4 lg:mt-0;
@@ -52,6 +61,7 @@ header {
         background-color: rgba(2, 13, 47, 0.5);
         box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(9px);
+        transition: transform .2s ease-out;
     }
 
     &.show {

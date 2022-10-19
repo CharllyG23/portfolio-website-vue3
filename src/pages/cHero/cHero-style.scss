@@ -2,7 +2,7 @@
     &-wrapper{
         @apply  w-full max-w-7xl mx-auto items-start py-20 px-9 pl-9 pr-9 relative overflow-hidden  transition-all duration-200;
         .hero{
-            @apply lg:flex lg:justify-between lg:items-center  transition-all duration-200;
+            @apply lg:flex lg:justify-between lg:items-center transition-all duration-200;
 
             &-svg{
                 @media screen and (max-width: 1024px ) {
@@ -68,6 +68,14 @@
         li{
             padding: 10px;
         }
+
+        svg {
+            &:hover{
+                transform: translateY(-3px);
+                transition: transform .2s ease-out;
+            }
+        }
+
         @media screen and (max-width: 1024px) {
             @apply hidden transition-all delay-200;
         }

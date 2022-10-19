@@ -30,8 +30,8 @@
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
                 &:hover{
-                    transition: all 0.12s cubic-bezier(0.645, 0.045, 0.355, 1);
-                    transform: translateY(-4px);
+                    transform: translateY(-3px);
+                    transition: transform .2s ease-out;
                 }
             }
             &-icon{
@@ -50,6 +50,11 @@
             @apply mb-3 lg:hidden;
             svg{
                 @apply inline-block text-center first-line:flex-row;
+
+                &:hover{
+                    transform: translateY(-3px);
+                    transition: transform .2s ease-out;
+                }
             }
         }
         span{

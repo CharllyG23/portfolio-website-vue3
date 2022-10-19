@@ -9,7 +9,7 @@
               <app-icons name="hands" :size="34" class="ml-5"></app-icons>
             </div>
             <h1>Sou Charlly</h1>
-            <h1 class="content-degraded">Frontend Developer;</h1>
+            <h1 class="content-degraded">Frontend Developer</h1>
             <div class="content-subTitle">
               <p>Sou uma pessoa que adora criar coisas para a web. Uma desenvolvedora front-end motivada pela curiosidade com habilidades de design.</p>
             </div>
