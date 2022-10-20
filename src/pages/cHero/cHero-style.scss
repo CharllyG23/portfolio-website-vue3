@@ -26,15 +26,17 @@
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
             }
-            button{
-                @apply flex font-normal text-base px-9 py-5 lg:px-8 lg:py-5 rounded;
+            .btnDownload{
+                @apply flex font-normal text-base rounded w-48 h-14 justify-center cursor-pointer items-center;
                 background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
-                transition: all 0.3s ease;
                 box-shadow: 0px 3px 20px 3px #161a50;
-    
+                
                 &:hover{
-                    padding: 20px 45px;
-                    max-width: 270px;
+                    transform: translateY(-4px);
+                    transition: transform .15s ease-out;
+                }
+                a{
+                    @apply flex;
                 }
             }
         }

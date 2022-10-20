@@ -2,7 +2,7 @@
     @apply text-white w-full h-full;
 
     &-container{
-        @apply  w-full max-w-7xl mx-auto items-start py-20 px-9 pl-9 pr-9 relative overflow-hidden transition delay-200;
+        @apply  w-full max-w-7xl mx-auto items-start py-28 px-9 pl-9 pr-9 relative overflow-hidden transition delay-200;
 
         &-titleF{
             @apply font-bold text-4xl lg:text-5xl lg:text-left text-center text-primary mb-8 whitespace-pre-wrap box-border max-w-full lg:w-[360px] transition delay-200;

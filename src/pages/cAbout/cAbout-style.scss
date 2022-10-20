@@ -1,7 +1,5 @@
  .pages{
-    .stress{
-        @apply text-secondary font-bold;
-    }
+
     .info{
         @apply whitespace-normal w-full lg:max-w-2xl gap-8 lg:items-center;
         span {
@@ -58,16 +56,20 @@
             &:after {
                 @apply top-5 left-5 -z-10 border-secondary border-[2px];
             }
-    }
-}    
-    
-    @media screen and (max-width: 1024px) {
-        .about-img{
-            margin: 40px auto 0px;
-            width: 70%;
-            box-sizing: inherit;
-            padding-bottom: 2rem;
-        }    
+        }
+
+        @media screen and (max-width: 1024px) {
+            .about-img{
+                margin: 40px auto 0px;
+                width: 70%;
+                box-sizing: inherit;
+                padding-bottom: 2rem;
+            }    
+        }
+    }    
+
+    .stress :deep(strong) {
+        @apply text-secondary font-medium text-base;
     }
 
     .nowadays{

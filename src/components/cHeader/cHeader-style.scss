@@ -18,7 +18,7 @@ header {
 
 
     .header-link {
-      @apply px-3 text-lg inline-block transition-all duration-200 relative lg:px-0 lg:text-base font-normal text-white focus:outline-none;
+      @apply px-3 text-lg inline-block hover:text-primary transition-all duration-200 relative lg:px-0 lg:text-base font-normal text-white focus:outline-none;
     }
 
     .nav {
@@ -34,15 +34,6 @@ header {
                     @apply py-3 relative lg:py-0;
                 }
             }
-
-            // .lang {
-            //     @apply
-            //         mt-auto
-            //         mb-8
-            //         flex
-            //         flex-col
-            //         items-center
-            // }
         }
     }
     .nav-button {

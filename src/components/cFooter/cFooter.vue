@@ -28,9 +28,9 @@
             </div>
             <div class="footer-socials">
                 <div class="footer-socials-icons">
-                    <a href="#"><app-icons name="git-hub" :size="25" class="mr-3"></app-icons></a>
-                    <a href="#"><app-icons name="linkedin" :size="25" class="mr-3"></app-icons></a>
-                    <a href="#"><app-icons name="instagram" :size="25"></app-icons></a>
+                    <a :href="gitHubUrl" target="_blank"><app-icons name="git-hub" :size="25" class="mr-3"></app-icons></a>
+                    <a :href="linkedinUrl" target="_blank"><app-icons name="linkedin" :size="25" class="mr-3"></app-icons></a>
+                    <a :href="instagramUrl" target="_blank"><app-icons name="instagram" :size="25"></app-icons></a>
                 </div>
                 <span>Projetado e codificado por Charlly <strong> ©Copyright 2022</strong></span>
             </div>
@@ -44,6 +44,10 @@
 import { ref } from 'vue'
 import AppIcons from '../AppIcons/AppIcons.vue'
 import cToast from '../cToast/cToast.vue';
+
+const instagramUrl = import.meta.env.VITE_APP_INSTAGRAM_URL
+const gitHubUrl = import.meta.env.VITE_APP_GITHUB_URL
+const linkedinUrl = import.meta.env.VITE_APP_LINKEDIN_URL
 
 const email = ref('charllyfiguera21@gmail.com')
 const toastVisible = ref(false)

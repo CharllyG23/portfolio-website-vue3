@@ -32,9 +32,6 @@
                     </div>
                 </div>
             </div>
-            <div class="repository">
-               <a href="#">Repositorio de GitHub</a>
-            </div>
         </div>
     </div>
 </template>
