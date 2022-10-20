@@ -43,21 +43,11 @@
     }
 
     .icons{
-        width: 40px;
-        position: fixed;
-        bottom: 0px;
-        left: 95%;
-        right: auto;
-        z-index: 10;
+        @apply w-10 fixed bottom-0 left-[95%] right-auto z-10 list-none;
 
         ul{
-            display: flex;
-            flex-direction: column;
-            -webkit-box-align: center;
-            align-items: center;
-            margin: 0px;
-            padding: 0px;
-            list-style: none;
+            @apply flex flex-col items-center m-0 p-0;
+   
             &::after {
                 content: "";
                 display: block;

@@ -14,7 +14,7 @@
                                 <span>Vuejs</span>
                                 <span>Nuxtjs</span>
                                 <span>Vuetify</span>
-                                <app-icons :size="25" name="link"></app-icons>
+                                <a :href="cecoguayUrl"  target="_blank"><app-icons :size="25" name="link"></app-icons></a>
                             </div>
                         </div>
                         <div class="gridCards-cards-contents">
@@ -27,7 +27,6 @@
                             <app-icons name="file" class="mb-4"></app-icons>
                             <h5>Em breve</h5>
                             <p>Go to this step by step guideline process on how to certify for your weekly benefits:</p>
-
                         </div>
                     </div>
                 </div>
@@ -37,6 +36,8 @@
 </template>
 <script setup>
 import AppIcons from '../../components/AppIcons/AppIcons.vue';
+
+const cecoguayUrl = import.meta.env.VITE_APP_CECOGUAY_URL
 </script>
 
 <style lang="scss" scoped>

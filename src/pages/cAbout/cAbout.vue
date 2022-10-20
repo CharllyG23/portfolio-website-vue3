@@ -62,13 +62,11 @@ const items = ref([
 	{
 		icon: 'scss',
 		title: "Scss",
-
 	},
 	{
 		icon: 'html',
 		title: "Html",
 	},
-
     {
 		icon: 'vue',
 		title: "Vuejs",

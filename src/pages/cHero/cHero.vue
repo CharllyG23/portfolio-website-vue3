@@ -8,14 +8,14 @@
               <h1>Oiê</h1>
               <app-icons name="hands" :size="34" class="ml-5"></app-icons>
             </div>
-            <h1>Sou Charlly</h1>
-            <h1 class="content-degraded">Frontend Developer</h1>
-            <div class="content-subTitle">
-              <p>Sou uma pessoa que adora criar coisas para a web. Uma desenvolvedora front-end motivada pela curiosidade com habilidades de design.</p>
+              <h1>Sou Charlly</h1>
+              <h1 class="content-degraded">Frontend Developer</h1>
+              <div class="content-subTitle">
+                <p>Sou uma pessoa que adora criar coisas para a web. Uma desenvolvedora front-end motivada pela curiosidade com habilidades de design.</p>
+              </div>
+            <div class="btnDownload">
+              <a :href="Cv" download>Download CV<app-icons name="download" :size="24" class="ml-2" /></a>
             </div>
-           <div class="btnDownload">
-              <a :href="Cv" download >Download CV <app-icons name="download" :size="24" class="ml-2" /></a>
-           </div>
           </div>
           <div class="hero-svg">
             <app-icons name="larger-smaller" :size="280"></app-icons>
