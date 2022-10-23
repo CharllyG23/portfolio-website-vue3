@@ -1,15 +1,6 @@
 .pages{
     &-wrapper{
         @apply  w-full max-w-7xl mx-auto items-start py-20 px-9 pl-9 pr-9 relative overflow-hidden  transition-all duration-200;
-        .hero{
-            @apply lg:flex lg:justify-between lg:items-center transition-all duration-200;
-
-            &-svg{
-                @media screen and (max-width: 1024px ) {
-                    @apply hidden;
-                }
-            }
-        }
         .content{
             @apply pt-24 font-bold text-4xl md:text-6xl lg:text-7xl leading-10  transition-all duration-200;
     
@@ -17,14 +8,33 @@
                 @apply flex items-center font-bold text-4xl md:text-6xl lg:text-7xl  transition-all duration-200;
             }
             &-subTitle{
-                @apply w-full max-w-md font-light text-base py-10 whitespace-normal  transition-all duration-200;
+                @apply w-full max-w-lg font-light text-base py-10 whitespace-normal  transition-all duration-200;
             }
             &-degraded{
-                @apply font-bold text-[2.5rem] md:text-6xl lg:text-[76px] overflow-hidden whitespace-normal  transition-all duration-200;
-                background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
+                    @apply 
+                    font-bold           
+                    transition 
+                    delay-200 
+                    overflow-hidden w-max
+                    max-w-full
+                    relative
+                    lg:pb-6
+                    pb-3
+    
+                    after:content-['']
+                    after:h-1
+                    after:bottom-0
+                    after:left-[0.5rem]
+                    after:right-[0.5rem]
+                    after:bg-secondary
+                    after:absolute
+                    after:lg:h-2
+                    after:rounded-lg;
+                    background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
+                    font-size: 8vw;
             }
             .btnDownload{
                 @apply flex font-normal text-base rounded w-48 h-14 justify-center cursor-pointer items-center;

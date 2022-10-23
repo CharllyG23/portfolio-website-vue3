@@ -9,7 +9,7 @@
             @apply w-full flex-wrap text-base font-light py-3;
         } 
     }
-    .about-img{
+    .about-img {
         @apply max-w-[300px] relative lg:pr-12;
         .wrapper{
             @apply block relative w-full rounded-xl text-secondary;
@@ -57,16 +57,15 @@
                 @apply top-5 left-5 -z-10 border-secondary border-[2px];
             }
         }
-
-        @media screen and (max-width: 1024px) {
-            .about-img{
-                margin: 40px auto 0px;
-                width: 70%;
-                box-sizing: inherit;
-                padding-bottom: 2rem;
-            }    
-        }
     }    
+    @media screen and (max-width: 1024px) {
+        .about-img{
+            margin: 40px auto 0px;
+            width: 70%;
+            box-sizing: inherit;
+            padding-bottom: 2rem;
+        }    
+    }
 
     .stress :deep(strong) {
         @apply text-secondary font-medium text-base;
@@ -92,6 +91,9 @@
         &--iconsContainer{
             @apply inline-flex relative flex-wrap box-border items-center justify-center gap-8 lg:gap-20 pt-10 delay-200;
             
+            .align{
+                @apply text-center;
+            }
             svg{
                 display: inline;
             }

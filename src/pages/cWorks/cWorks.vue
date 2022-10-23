@@ -14,19 +14,13 @@
                                 <span>Vuejs</span>
                                 <span>Nuxtjs</span>
                                 <span>Vuetify</span>
-                                <a :href="cecoguayUrl"  target="_blank"><app-icons :size="25" name="link"></app-icons></a>
+                                <a :href="cecoguayUrl" target="_blank"><app-icons name="link" :size="25" /></a>
                             </div>
                         </div>
-                        <div class="gridCards-cards-contents">
-                            <app-icons name="file" class="mb-4"></app-icons>
-                            <h5>Em breve</h5>
-                            <p>Go to this step by step guideline process on how to certify for your weekly benefits:</p>
-
-                        </div>
-                        <div class="gridCards-cards-contents">
-                            <app-icons name="file" class="mb-4"></app-icons>
-                            <h5>Em breve</h5>
-                            <p>Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                        <div v-for="card in cards" :key="card" class="gridCards-cards-contents">
+                            <app-icons :name="card.icon" class="mb-4" />
+                            <h5>{{ card.title }}</h5>
+                            <p>{{ card.subTitle }}</p>
                         </div>
                     </div>
                 </div>
@@ -35,9 +29,24 @@
     </div>
 </template>
 <script setup>
+import { ref } from 'vue';
 import AppIcons from '../../components/AppIcons/AppIcons.vue';
 
 const cecoguayUrl = import.meta.env.VITE_APP_CECOGUAY_URL
+
+const cards = ref([
+    {   
+        icon: 'file',
+        title: 'Em breve',
+        subTitle: 'Go to this step by step guideline process on how to certify for your weekly benefits.',
+    },
+    {   
+        icon: 'file',
+        title: 'Em breve',
+        subTitle: 'Go to this step by step guideline process on how to certify for your weekly benefits.',
+    }
+])
+
 </script>
 
 <style lang="scss" scoped>

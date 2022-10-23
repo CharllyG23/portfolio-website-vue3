@@ -2,7 +2,6 @@
   <section id="home" class="pages">
     <div class="pages-wrapper">
       <div class="pages-wrapper-content">
-        <div class="hero">
           <div class="content">
             <div class="content-header">
               <h1>Oiê</h1>
@@ -17,10 +16,6 @@
               <a :href="Cv" download>Download CV<app-icons name="download" :size="24" class="ml-2" /></a>
             </div>
           </div>
-          <div class="hero-svg">
-            <app-icons name="larger-smaller" :size="280"></app-icons>
-          </div>
-        </div>
       </div> 
     </div>
     <div class="icons">
