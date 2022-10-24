@@ -23,20 +23,18 @@
             </div>            
         </div>
         <section class="pages__wrapper">
-           <div class="pages__wrapper--contents">
-                <div class="pages__wrapper--skill">
-                    <h3>{{ data.skill }}</h3>
-                    <p>{{ data.tools }}</p>
-                </div>
-                <div class="pages__wrapper--iconsContainer" >
-                    <div class="align" v-for="item in items" :key="item" >
-                        <app-icons :name="item.icon" :size="45"></app-icons>
-                        <div class="pt-3">
-                            <span>{{item.title}}</span>
-                        </div>
+            <div class="pages__wrapper--skill">
+                <h3>{{ data.skill }}</h3>
+                <p>{{ data.tools }}</p>
+            </div>
+            <div class="pages__wrapper--iconsContainer" >
+                <div class="align" v-for="item in items" :key="item" >
+                    <app-icons :name="item.icon" :size="45"></app-icons>
+                    <div class="pt-3">
+                        <span>{{item.title}}</span>
                     </div>
                 </div>
-           </div>
+            </div>
         </section>
     </div>  
 </template>
@@ -111,10 +109,6 @@ const items = ref([
     {
 		icon: 'figma',
 		title: "Figma",
-	},
-    {
-		icon: 'rest-api',
-		title: "Rest Api",
 	},
 ])
 </script>
