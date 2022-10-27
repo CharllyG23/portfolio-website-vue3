@@ -1,6 +1,6 @@
 .pages{
     &-wrapper{
-        @apply  w-full max-w-7xl mx-auto items-start py-20 px-9 pl-9 pr-9 relative overflow-hidden  transition-all duration-200;
+        @apply  w-full max-w-7xl mx-auto items-start py-20 px-6 relative overflow-hidden  transition-all duration-200;
         .content{
             @apply pt-20 font-bold text-4xl md:text-6xl lg:text-7xl leading-10  transition-all duration-200;
     
@@ -19,6 +19,7 @@
                     lg:pb-6
                     pb-3
                     pt-1
+                    text-[7.5vw]
                     w-max
                     after:content-['']
                     after:h-1
@@ -33,7 +34,6 @@
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
-                    font-size: 7.5vw;
             }
             .btnDownload{
                 @apply flex font-normal text-base rounded w-48 h-14 justify-center cursor-pointer items-center;

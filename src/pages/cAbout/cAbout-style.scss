@@ -6,7 +6,7 @@
             @apply text-lg font-extrabold text-secondary;
         }
         p{
-            @apply w-full flex-wrap text-base font-light py-3;
+            @apply w-full flex-wrap text-sm lg:text-base font-light py-3;
         } 
     }
     .about-img {
@@ -72,7 +72,7 @@
     }
 
     .nowadays{
-        @apply pb-10 pt-4 text-base font-light w-full max-w-2xl;
+        @apply  pb-0 lg:pb-10 pt-4 text-sm lg:text-base font-light w-full max-w-2xl;
 
         h3{
             @apply text-2xl font-bold mb-5;
@@ -83,7 +83,7 @@
         @apply  w-full mx-auto text-center items-start pt-10 pb-10 lg:pb-24 px-8 lg:px-12 relative overflow-hidden;
     
         &--iconsContainer{
-            @apply inline-flex relative flex-wrap box-border items-center justify-center gap-8 lg:gap-10 lg:pt-20 pt-10;
+            @apply inline-flex relative text-sm lg:text-base flex-wrap box-border items-center justify-center gap-8 lg:gap-10 lg:pt-20 pt-10;
             
             .align{
                 @apply text-center;

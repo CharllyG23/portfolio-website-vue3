@@ -46,7 +46,7 @@ import AppIcons from '../../components/AppIcons/AppIcons.vue';
 const data = ref({
     title: 'Escrevo código, Desenho coisas',
     subTitle: 'Quem é charlly', 
-    info: 'Uma desenvolvedora front-end  motivada pela curiosidade com habilidades de design.',
+    info: 'Um desenvolvedora Front-end motivado pela curiosidade de sempre aprender algo novo.',
     info2: 'Sou apaixonado por dar vida aos aspectos técnicos e visuais dos produtos digitais. Experiência do usuário, belos pixels e escrita acessível e limpa, o código humano é importante para mim, e acredito firmemente que menos é mais.',
     info3: `Sou  <strong> Engenheiro da Informatica </strong> formado em 2020 na <strong>Venezuela,</strong> mas moro em Brasil um país vibrante cheio de pessoas espetacularmente diferentes, gosto de ler, assistir filmes interessantes com uma mensagem inspiradora,também gosto de jogar jogos de Shooter, e claro que sou um <strong>servo de gatos.</strong>`,
     nowadayTitle: 'Atualmente trabalhando em:',
