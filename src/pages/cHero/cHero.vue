@@ -8,9 +8,9 @@
               <app-icons name="hands" :size="34" class="ml-5"></app-icons>
             </div>
               <h1>Eu sou Charlly</h1>
-              <h2 class="content-degraded">Frontend Developer</h2>
+              <h2 class="content-degraded"><span class="underline">Front-end Developer</span></h2>
               <div class="content-subTitle">
-                <p>Sou uma Engenheira da Informatica, dedicada ao Desenvolvimento Frontend (ocasionalmente faço UI design) e à criação de experiências digitais excepcionais.</p>
+                <p>Sou uma Engenheira da Informatica, dedicada ao Desenvolvimento Frontend(ocasionalmente faço UI design) criando experiências digitais intuitivas e adaptáveis ​​para os usuários.</p>
               </div>
             <div class="btnDownload">
               <a :href="Cv" download>Download CV<app-icons name="download" :size="24" class="ml-2" /></a>

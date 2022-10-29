@@ -21,7 +21,7 @@
                            </div>
                         </div>
                         <div @click="openToast">
-                            <h2>{{ email }}</h2>
+                            <h2 class="degraded"><span class="underline">{{ email }}</span></h2>
                         </div>
                     </div>
                 </div>

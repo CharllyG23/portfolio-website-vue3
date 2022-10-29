@@ -2,27 +2,25 @@
    <div id="works" class="pages">
       <div class="pages-container">
             <h1 class="title">Projetos</h1>
-            <h2 class="subTitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
-            <div class="pages-container-content">
-                <div class="gridCards">
-                    <div class="gridCards-cards">
-                        <div class="gridCards-cards-contents">
-                            <app-icons name="file" class="mb-4"></app-icons>
-                            <h5>Cecoguay</h5>
-                            <p>Homepage desenhada por mim e codificada por um amigo, para um prestador de serviços funerários. </p>
-                            <div class="gridCards-cards-contents-tools">
-                                <span>Vuejs</span>
-                                <span>Nuxtjs</span>
-                                <span>Vuetify</span>
-                                <a :href="cecoguayUrl" target="_blank"><app-icons name="link" :size="25" /></a>
-                            </div>
-                        </div>
-                        <div v-for="card in cards" :key="card" class="gridCards-cards-contents">
-                            <app-icons :name="card.icon" class="mb-4" />
-                            <h5>{{ card.title }}</h5>
-                            <p>{{ card.subTitle }}</p>
-                        </div>
-                    </div>
+            <div class="container">
+                <div class="card">
+                    <figure class="card__thumb">
+                        <img :src="cecoguay" alt="Imagem do projeto cecoguay " class="card__image">
+                        <figcaption class="card__caption">
+                            <h2 class="card__title">Cecoguay</h2>
+                            <p class="card__snippet">Homepage desenhada por mim e codificada por um amigo, para um prestador de serviços funerários.</p>
+                            <a :href="cecoguayUrl" class="card__button">Ver projeto</a>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div  v-for="card in cards" :key="card" class="card" >
+                    <figure class="card__thumb">
+                        <img :src="developer" alt="developer" class="card__image">
+                        <figcaption class="card__caption">
+                            <h2 class="card__title">{{ card.title }}</h2>
+                            <p class="card__snippet">{{ card.subTitle }}</p>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
@@ -31,6 +29,8 @@
 <script setup>
 import { ref } from 'vue';
 import AppIcons from '../../components/AppIcons/AppIcons.vue';
+import cecoguay from '../../assets/img/cecoguay.jpg'
+import developer from '../../assets/img/dev.svg'
 
 const cecoguayUrl = import.meta.env.VITE_APP_CECOGUAY_URL
 
@@ -38,12 +38,12 @@ const cards = ref([
     {   
         icon: 'file',
         title: 'Em breve',
-        subTitle: 'Go to this step by step guideline process on how to certify for your weekly benefits.',
+        subTitle: 'Pegue o café e espere um pouco, estou desenvolvendo o projeto.',
     },
     {   
         icon: 'file',
         title: 'Em breve',
-        subTitle: 'Go to this step by step guideline process on how to certify for your weekly benefits.',
+        subTitle: 'Pegue o café e espere um pouco, estou desenvolvendo o projeto.',
     }
 ])
 

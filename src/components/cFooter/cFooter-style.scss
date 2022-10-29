@@ -22,39 +22,35 @@
                 @apply flex items-center pb-3 transition delay-200;
             }
 
-            h2{
-                @apply font-bold lg:text-3xl 
-                text-lg 
-                cursor-pointer 
+            .degraded{
+                @apply 
+                font-bold           
                 transition 
-                delay-200 
-                lg:leading-[3rem] 
-                leading-[2rem] 
-                overflow-hidden w-max
-                max-w-full
-                mx-auto
-                relative
-                pb-1
-
-                after:content-['']
-                after:h-[2px]
-                after:bottom-0
-                after:left-[0.2rem]
-                after:right-[0.2rem]
-                after:bg-secondary
-                after:absolute
-                after:lg:h-1
-                after:rounded-lg;
-                ;
+                lg:text-3xl
+                text-xl
+                w-full
+                max-w-max
+                transform
+                inline-block
+                cursor-pointer;
                 background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
-                &:hover{
-                    transform: translateY(-3px);
-                    transition: transform .2s ease-out;
-                }
+                word-spacing: normal;
+
+                &:hover .underline {
+                    background-size: 100% 100%;
+                  }
             }
+        .underline {
+            width: calc(90%);
+            background-image: linear-gradient(transparent calc(100% - 5px), #fb00ff 10px);
+            background-repeat: no-repeat;
+            background-size: 0% 100%;
+            transition: background-size 1.5s;
+          }
+
             &-icon{
                 @apply inline-block text-center lg:flex mt-6;
             }
