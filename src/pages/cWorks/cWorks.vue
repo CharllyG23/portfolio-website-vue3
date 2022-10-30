@@ -2,25 +2,22 @@
    <div id="works" class="pages">
       <div class="pages-container">
             <h1 class="title">Projetos</h1>
-            <div class="container">
+            <h2 class="subTitle">Algumas coisas eu construí e outras para fazer.</h2>
+            <div class="wrapper">
                 <div class="card">
-                    <figure class="card__thumb">
-                        <img :src="cecoguay" alt="Imagem do projeto cecoguay " class="card__image">
-                        <figcaption class="card__caption">
-                            <h2 class="card__title">Cecoguay</h2>
-                            <p class="card__snippet">Homepage desenhada por mim e codificada por um amigo, para um prestador de serviços funerários.</p>
-                            <a :href="cecoguayUrl" class="card__button">Ver projeto</a>
-                        </figcaption>
-                    </figure>
+                    <img :src="cecoguay" alt="Imagem do projeto cecoguay">
+                    <div class="info">
+                        <h2 >Cecoguay</h2>
+                        <p >Homepage desenhada por mim e codificada por um amigo, para um prestador de serviços funerários.</p>
+                        <a :href="cecoguayUrl" target="_blank" class="card__button">Ver projeto</a>
+                    </div>
                 </div>
                 <div  v-for="card in cards" :key="card" class="card" >
-                    <figure class="card__thumb">
-                        <img :src="developer" alt="developer" class="card__image">
-                        <figcaption class="card__caption">
-                            <h2 class="card__title">{{ card.title }}</h2>
-                            <p class="card__snippet">{{ card.subTitle }}</p>
-                        </figcaption>
-                    </figure>
+                    <img :src="developer" alt="developer">
+                    <div class="info">
+                        <h2>{{ card.title }}</h2>
+                        <p>{{ card.subTitle }}</p>
+                    </div>
                 </div>
             </div>
         </div>

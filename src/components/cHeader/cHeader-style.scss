@@ -17,11 +17,32 @@ header {
     }
 
     .header-link {
-      @apply px-3 text-lg inline-block relative hover:text-primary transition-all duration-200 lg:px-0 lg:text-base font-normal text-letters focus:outline-none;
+      @apply px-3 text-lg inline-block 
+      relative
+      transition-all duration-200 
+      lg:px-0 lg:text-base font-normal
+      text-letters focus:outline-none;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #fb00ff;
+        transform-origin: bottom left;
+        transition: transform .5s ease-out;
+      }
+      
+        &:hover::after {
+            transform: scaleX(1);
+        }
       }
 
     .nav {
-       @apply w-full h-0 transition-all duration-300 lg:w-auto lg:h-auto ;
+       @apply w-full h-0 transition-all duration-300 lg:w-auto lg:h-auto;
 
         nav {
             @apply flex flex-col h-full lg:flex-row pr-0 lg:pr-20;

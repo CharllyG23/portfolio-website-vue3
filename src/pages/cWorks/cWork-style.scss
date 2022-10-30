@@ -1,141 +1,48 @@
-$desktop: 1024px;
-
-@mixin breakpoint($point) {
-  @if $point == desktop {
-    @media (min-width: $desktop) {
-      @content;
-		}
-	}
-}
-
 .pages{
-    .container {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          width: 100%;
-          margin: 0 auto 50px;
-          padding-top: 80px;
-      }
+    .wrapper {
+        @apply flex w-full justify-center flex-wrap gap-8 transition transform;
       
-      .card {
-          width: 320px;
-          margin: 20px;
-          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
-          border-radius: 8px;
+          .card {
+            @apply w-[295px] h-80 rounded-md p-6 relative flex items-end;
+            transition: 0.4s ease-out;
+            box-shadow: 0px 7px 10px rgba(23, 13, 83, 0.5);
 
-          &:hover {
-              .card__caption {
-                  top: 50%;
-                  transform: translateY(-50%);
+            &:hover{
+                @apply transform translate-y-[30px];
               }
-      
-              .card__image {
-                  transform: translateY(-10px);
+
+              img {
+                @apply w-full h-full object-center object-cover absolute top-0 left-0 rounded-md;
               }
-      
-              .card__thumb {
-                  &::after {
-                      top: 0;
-                  }
-              }
-      
-              .card__snippet {
-                  margin: 20px 0;
+
+              &::before {
+                content: "";
+                @apply absolute top-0 left-0 block h-full w-full rounded-md bg-slate-900 bg-opacity-50 z-10 transition opacity-0;
               }
           }
-      
-          &__thumb {
-              position: relative;
-              max-height: 280px;
-              border-radius: 8px;
-              overflow: hidden;
-              
-              @include breakpoint(desktop) {
-                  max-height: 280;
-                  
-              }
-      
-              &::after {
-                  position: absolute;
-                  top: 0;
-                  display: block;
-                  content: '';
-                  width: 100%;
-                  height: 100%;
-                  background: linear-gradient(0deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255 ,255 , 0) 100%);
-                  transition: .3s;
-                  
-                  @include breakpoint(desktop) {
-                      top: calc(100% - 140px);
-                  }
-              }
+
+          .card:hover:before {
+            opacity: 1;
           }
-          
-          &__image {
-              transition: .5s ease-in-out;
-              border-radius: 8px;
+          .card:hover .info {
+            opacity: 1;
+            transform: translateY(0px);
           }
-          
-          &__caption {
-              position: absolute;
-              top: 50%;
-              z-index: 1;
-              padding: 0 20px;
-              color: white;
-              font-weight: 700;
-              transform: translateY(-50%);
-              text-align: center;
-              transition: .3s;
-      
-              @include breakpoint(desktop) {
-                  top: calc(100% - 0px);
-                  transform: unset;
-              }
-          }
-      
-          &__title {
-              display: -webkit-box;
-              max-height: 85px;
-              overflow: hidden;
-              font-size: 23px;
-              line-height: 28px;
-              text-overflow: ellipsis;
-              -webkit-line-clamp: 3;
-              -webkit-box-orient: vertical;
-          }
-      
-          &__snippet {
-              display: -webkit-box;
-              max-height: 150px;
-              margin: 20px 0;
-              overflow: hidden;
-              font-size: 16px;
-              line-height: 20px;
-              text-overflow: ellipsis;
-              transition: .5s ease-in-out;
-              -webkit-line-clamp: 5;
-              -webkit-box-orient: vertical;
-              
-              @include breakpoint(desktop) {
-                  margin: 60px 0;
-              }
-          }
-      
-          &__button {
-              display: inline-block;
-              padding: 10px 20px;
-              color: white;
-              border: 1px solid white;
-              font-size: 12px;
-              text-transform: uppercase;
-              text-decoration: none;
-              transition: .3s;
-      
-              &:hover {
-                  color: black;
-                  background-color: white;
-              }
-          }
-      }
+
+           .info {
+            @apply relative z-20 opacity-0 translate-y-[30px] transition text-white;
+
+            h2{
+               @apply mb-4 text-2xl font-bold;
+            }
+            p{
+                @apply text-sm font-normal mb-4;
+            }
+            a {
+                @apply flex font-normal text-sm rounded w-32 h-10 justify-center cursor-pointer items-center;
+                background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
+            }
+        }
+        
+    }   
 }
