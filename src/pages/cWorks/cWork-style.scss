@@ -39,8 +39,7 @@
                 @apply text-sm font-normal mb-4;
             }
             a {
-                @apply flex font-normal text-sm rounded w-32 h-10 justify-center cursor-pointer items-center;
-                background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
+                @apply flex font-normal text-sm rounded w-32 h-10 justify-center border-solid border-2 border-secondary hover:bg-secondary hover:bg-opacity-5 cursor-pointer items-center;
             }
         }
         

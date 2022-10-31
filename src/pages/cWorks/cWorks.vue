@@ -5,7 +5,7 @@
             <h2 class="subTitle">Algumas coisas eu construí e outras para fazer.</h2>
             <div class="wrapper">
                 <div class="card">
-                    <img :src="cecoguay" alt="Imagem do projeto cecoguay">
+                    <img :src="prototype" alt="Imagem do projeto cecoguay">
                     <div class="info">
                         <h2 >Cecoguay</h2>
                         <p >Homepage desenhada por mim e codificada por um amigo, para um prestador de serviços funerários.</p>
@@ -26,7 +26,7 @@
 <script setup>
 import { ref } from 'vue';
 import AppIcons from '../../components/AppIcons/AppIcons.vue';
-import cecoguay from '../../assets/img/cecoguay.jpg'
+import prototype from '../../assets/img/prototype.jpg'
 import developer from '../../assets/img/dev.svg'
 
 const cecoguayUrl = import.meta.env.VITE_APP_CECOGUAY_URL

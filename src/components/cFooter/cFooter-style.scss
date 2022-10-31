@@ -45,10 +45,10 @@
             }
         .underline {
             width: calc(90%);
-            background-image: linear-gradient(transparent calc(100% - 5px), #fb00ff 10px);
+            background-image: linear-gradient(transparent calc(100% - 3px), #fb00ff 10px);
             background-repeat: no-repeat;
             background-size: 0% 100%;
-            transition: background-size 1.5s;
+            transition: background-size 1s;
           }
 
             &-icon{

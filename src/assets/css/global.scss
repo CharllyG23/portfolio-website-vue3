@@ -2,19 +2,20 @@ html, body {
     font-family: 'Ubuntu', sans-serif;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
 }
 
 body{
     background-color: #020D1E;
     &::-webkit-scrollbar{
-        width: 10px;
+        width: 6px;
         background-color: #020D1E;
     }
     &::-webkit-scrollbar-track{
         background-color: #020D1E;
     }
     &::-webkit-scrollbar-thumb{
-        background-color: #021531; 
+        background-color: #fb00ff; 
         border-radius: 5px;
     } 
 }
@@ -30,7 +31,7 @@ body{
         }
 
         .title{
-            @apply font-bold text-4xl lg:text-5xl mb-8 whitespace-pre-wrap box-border max-w-full w-[360px] text-primary ;
+            @apply font-bold text-4xl lg:text-5xl mb-8 whitespace-pre-wrap box-border max-w-full w-[360px] text-primary;
         }
         
         .subTitle{
