@@ -26,17 +26,17 @@ const steps = [
    {
 		title: 'Plug Apps',
 		time: 'Outubro 2020 - Junho 2021',
-      subTitle: 'Colaborei muito de perto com a maioria da equipe codificando e corrigindo bugs em sites internos da empresa usando principalmente Vue e Laravel.',
+      subTitle: 'Colaborei de perto com a maioria da equipe codificando e corrigindo bugs em sites internos da empresa.',
 	},
    {
 		title: 'A&M Solutions',
 		time: 'Julho 2021 - Setembro 2021',
-      subTitle: 'Trabalhei principalmente para garantir experiências de usuário satisfatórias e consistência de projeto que os clientes precisam no ReactJs e Bootstrap.',
+      subTitle: 'Trabalhei principalmente para garantir experiências de usuário satisfatórias e consistente.',
 	},
    {
 		title: 'Partyou',
 		time: 'Novembro 2021 - Atual',
-      subTitle: 'Junto com a equipe de frontend, criamos código moderno, eficiente e de fácil manutenção com o framework Vue 3 para uma ampla gama de projetos internos.',
+      subTitle: 'Junto com a equipe de frontend, criamos código moderno e de fácil manutenção com o framework Vue 3.',
 	},
 ]
 </script>

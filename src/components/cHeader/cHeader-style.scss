@@ -45,7 +45,7 @@ header {
        @apply w-full h-0 transition-all duration-300 lg:w-auto lg:h-auto;
 
         nav {
-            @apply flex flex-col h-full lg:flex-row pr-0 lg:pr-20;
+            @apply flex flex-col h-full lg:flex-row pr-0 lg:pr-14;
 
             .navbar {
                 @apply flex flex-col items-center mb-12 lg:flex-row lg:mb-0 lg:flex-1 lg:w-full lg:space-x-8 lg:mt-0 mt-14;
