@@ -7,7 +7,7 @@
               <h1>Oiê</h1>
               <app-icons name="hands" :size="34" class="ml-5"></app-icons>
             </div>
-              <h1>Eu sou Charlly</h1>
+              <h1>Sou Charlly</h1>
               <h2 class="content-degraded"><span class="underline">Front-end Developer</span></h2>
               <div class="content-subTitle">
                 <p>Sou uma Engenheira da Informatica, dedicada ao Desenvolvimento Frontend (ocasionalmente faço UI design) criando experiências digitais intuitivas e adaptáveis ​​para os usuários.</p>

@@ -66,12 +66,12 @@ const items = ref([
 		title: "Html",
 	},
     {
-		icon: 'vue',
-		title: "Vuejs",
-	},
-    {
 		icon: 'css',
 		title: "Css",
+	},
+    {
+		icon: 'vue',
+		title: "Vuejs",
 	},
     {
 		icon: 'js',
@@ -98,14 +98,9 @@ const items = ref([
 		title: "VsCode",
 	},
     {
-		icon: 'json',
-		title: "Json",
-	},
-    {
 		icon: 'npm',
 		title: "Npm",
 	},
-
     {
 		icon: 'figma',
 		title: "Figma",

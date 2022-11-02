@@ -8,7 +8,7 @@
                 @apply flex items-center font-bold text-4xl md:text-6xl lg:text-7xl transition-all duration-200;
             }
             &-subTitle{
-                @apply w-full max-w-lg font-light text-sm lg:text-base py-6 lg:py-8 whitespace-normal transition-all duration-200;
+                @apply w-full max-w-md lg:max-w-lg font-light text-sm lg:text-base py-6 lg:py-8 md:pr-7 lg:pr-0 whitespace-normal transition-all duration-200;
             }
             &-degraded{
                     @apply 
@@ -16,7 +16,7 @@
                     transition 
                     lg:text-[95px]
                     md:text-7xl
-                    text-5xl
+                    text-[2.921rem]
                     w-full
                     max-w-max
                     transform
