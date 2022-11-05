@@ -1,5 +1,8 @@
 <template>
   <section id="home" class="pages">
+    <div class="absolute w-full h-full object-cover">
+        <img class="w-full h-full " :src="circle" alt="cicle">
+      </div>
     <div class="pages-wrapper">
       <div class="pages-wrapper-content">
           <div class="content">
@@ -8,7 +11,7 @@
               <app-icons name="hands" :size="34" class="ml-5"></app-icons>
             </div>
               <h1>Sou Charlly</h1>
-              <h2 class="content-degraded"><span class="underline">Front-end Developer</span></h2>
+              <h2 class="content-degraded" data-shadow='Frontend Developer'><span class="underline">Frontend Developer</span></h2>
               <div class="content-subTitle">
                 <p>Sou uma Engenheira da Informatica, dedicada ao Desenvolvimento Frontend (ocasionalmente faço UI design) criando experiências digitais intuitivas e adaptáveis ​​para os usuários.</p>
               </div>
@@ -36,6 +39,7 @@
 <script setup>
 import AppIcons from '../../components/AppIcons/AppIcons.vue';
 import Cv from '../../assets/file/CV-Charlly-Garcia.pdf'
+import circle from '../../assets/img/circle.svg'
 
 const instagramUrl = import.meta.env.VITE_APP_INSTAGRAM_URL
 const gitHubUrl = import.meta.env.VITE_APP_GITHUB_URL

@@ -74,7 +74,7 @@
                         @apply text-base font-semibold pt-0.5 lg:text-center text-primary;;
                     }
                     .__timeInfo {
-                        @apply text-xs text-slate-400 pt-0.5 lg:text-center;
+                        @apply text-[10px] text-slate-400 pt-1 lg:text-center;
                     }
                     .__subTitleInfo {
                         @apply text-sm text-letters pt-3 lg:text-center;

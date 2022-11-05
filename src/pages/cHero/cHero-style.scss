@@ -21,12 +21,12 @@
                     max-w-max
                     transform
                     leading-[50px]
-                    inline-block
-                    cursor-context-menu;
-                    background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
+                    cursor-context-menu
+                    text-primary;
+                    // background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
+                    // -webkit-background-clip: text;
+                    // -webkit-text-fill-color: transparent;
+                    // background-clip: text;
                     word-spacing: normal;
 
                     &:hover .underline {
@@ -38,12 +38,12 @@
                 background-image: linear-gradient(transparent calc(100% - 6px), #fb00ff 10px);
                 background-repeat: no-repeat;
                 background-size: 0% 100%;
+                text-decoration: none;
                 transition: background-size 1.5s;
               }
 
             .btnDownload{
-                @apply flex font-normal text-base rounded w-48 h-14 justify-center cursor-pointer items-center;
-                background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
+                @apply flex font-medium text-white text-base rounded w-48 h-14 justify-center cursor-pointer items-center bg-secondary;
                 box-shadow: 0px 3px 20px 3px #161a50;
 
                 a{
