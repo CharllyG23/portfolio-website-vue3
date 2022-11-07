@@ -38,12 +38,12 @@
         </div>
         <c-toast v-model="toastVisible"></c-toast>
     </footer>
-    
 </template>
 <script setup>
 import { ref } from 'vue'
 import AppIcons from '../AppIcons/AppIcons.vue'
 import cToast from '../cToast/cToast.vue';
+import circle from '../../assets/img/circle.svg'
 
 const instagramUrl = import.meta.env.VITE_APP_INSTAGRAM_URL
 const gitHubUrl = import.meta.env.VITE_APP_GITHUB_URL

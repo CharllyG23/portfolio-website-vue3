@@ -2,36 +2,25 @@
     &-wrapper{
         @apply  w-full max-w-7xl mx-auto items-start py-20 px-8 relative overflow-hidden transition-all duration-200;
         .content{
-            @apply pt-20 font-bold text-4xl md:text-6xl lg:text-7xl leading-[3.5rem] transition-all duration-200;
+            @apply pt-20 font-bold text-4xl md:text-6xl lg:text-7xl  transition-all duration-200;
     
             &-header{
                 @apply flex items-center font-bold text-4xl md:text-6xl lg:text-7xl transition-all duration-200;
             }
+            &-coffee{
+                @apply flex items-center lg:pb-4;
+            }
             &-subTitle{
-                @apply w-full max-w-md lg:max-w-lg font-light text-sm lg:text-base py-6 lg:py-8 md:pr-7 lg:pr-0 whitespace-normal transition-all duration-200;
+                @apply w-full max-w-md lg:max-w-lg font-light text-sm lg:text-base py-6 lg:py-8 md:pr-7 lg:pr-0 
+                whitespace-normal transition-all duration-200;
             }
             &-degraded{
-                    @apply 
-                    font-bold           
-                    transition 
-                    lg:text-[95px]
-                    md:text-7xl
-                    text-[2.921rem]
-                    w-full
-                    max-w-max
-                    transform
-                    leading-[50px]
-                    cursor-context-menu
-                    text-primary;
-                    // background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
-                    // -webkit-background-clip: text;
-                    // -webkit-text-fill-color: transparent;
-                    // background-clip: text;
-                    word-spacing: normal;
+                @apply font-bold transition lg:text-[95px] md:text-7xl text-[2.921rem] w-full max-w-max transform leading-[50px] 
+                cursor-context-menu text-primary;
 
-                    &:hover .underline {
-                        background-size: 100% 100%;
-                      }
+                &:hover .underline {
+                    background-size: 100% 100%;
+                }
             }
             .underline {
                 width: calc(90%);
@@ -42,14 +31,23 @@
                 transition: background-size 1.5s;
               }
 
-            .btnDownload{
+            &-download{
                 @apply flex font-medium text-white text-base rounded w-48 h-14 justify-center cursor-pointer items-center bg-secondary;
                 box-shadow: 0px 3px 20px 3px #161a50;
-
                 a{
                     @apply flex;
                 }
             }
+        }    
+    }
+    .letter{
+        @apply absolute top-[240px] lg:top-[260px] ml-10 font-bold text-[80px] 
+        md:text-[180px] lg:text-[200px] leading-[200px] lg:leading-[240px] transition-all duration-200;
+        font-family: Tahoma;
+        color: rgba(34, 21, 62, 0.7);
+
+        @media screen and (max-width: 768px) {
+            @apply hidden;
         }
     }
 
@@ -75,12 +73,30 @@
         svg {
             &:hover{
                 transform: translateY(-3px);
-                transition: transform .2s ease-out;
+                transition: transform .2s ease-out; 
             }
         }
 
         @media screen and (max-width: 1024px) {
             @apply hidden transition-all delay-200;
         }
+    }
+
+    .image-svg{
+        position: absolute;
+        z-index: -1;
+        width: clamp(15rem, 28vw, 32.5rem);
+        height: clamp(15rem, 5vw, 20.5rem);
+        top: 8%;
+        right:2%;
+        transition: all 0.4s ease-out;
+        transform-origin: center center;
+        pointer-events: none;
+        @media screen and (max-width: 760px) {
+            @apply hidden;
+        }
+    }
+    .circle{
+        @apply w-full h-full;
     }
 }

@@ -32,12 +32,9 @@
                 max-w-max
                 transform
                 inline-block
-                cursor-pointer;
-                background: linear-gradient(85.26deg, #4456fa 11.44%, #fb00ff 80.77%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                background-clip: text;
-                word-spacing: normal;
+                cursor-pointer
+                text-primary
+                relative;
 
                 &:hover .underline {
                     background-size: 100% 100%;
@@ -45,10 +42,11 @@
             }
         .underline {
             width: calc(90%);
-            background-image: linear-gradient(transparent calc(100% - 3px), #fb00ff 10px);
+            background-image: linear-gradient(transparent calc(100% - 4px), #fb00ff 10px);
             background-repeat: no-repeat;
             background-size: 0% 100%;
             transition: background-size 1s;
+            text-decoration: none;
           }
 
             &-icon{
@@ -83,5 +81,4 @@
         @apply w-full h-2 absolute;
         background: linear-gradient(90.12deg, #0B1EDA 0.25%, #F907FC 80.91%);
     }
-
 }
