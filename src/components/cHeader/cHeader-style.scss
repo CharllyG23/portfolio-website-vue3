@@ -13,11 +13,11 @@ header {
 
     .header {
         transition: all 0.2s;
-      @apply flex flex-wrap w-full py-3 lg:pl-8 justify-between lg:py-7 lg:flex-nowrap lg:items-center lg:mx-auto lg:max-w-7xl overflow-hidden;
+      @apply flex flex-wrap w-full items-center py-3 lg:pl-8 justify-between lg:py-7 lg:flex-nowrap lg:items-center lg:mx-auto lg:max-w-7xl overflow-hidden;
     }
 
     .header-link {
-      @apply px-3 text-lg inline-block 
+      @apply px-3 text-2xl inline-block 
       relative
       transition-all duration-200 
       lg:px-0 lg:text-base font-normal
@@ -61,10 +61,10 @@ header {
     }
 
     .logo {
-        @apply h-6 flex lg:h-11 font-bold text-3xl absolute left-1/2 transform -translate-x-1/2 lg:static lg:transform-none text-primary;
+        @apply flex font-medium text-3xl absolute left-1/2 transform -translate-x-1/2 lg:static lg:transform-none text-primary;
         
         a{
-            @apply items-center h-full flex mt-4 lg:mt-0;
+            @apply items-center h-full flex ;
         }
     }
 

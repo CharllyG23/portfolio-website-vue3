@@ -41,10 +41,10 @@
         }    
     }
     .letter{
-        @apply absolute top-[240px] lg:top-[260px] ml-10 font-bold text-[80px] 
+        @apply absolute top-[240px] lg:top-[260px] font-bold mx-auto px-14
         md:text-[180px] lg:text-[200px] leading-[200px] lg:leading-[240px] transition-all duration-200;
         font-family: Tahoma;
-        color: rgba(34, 21, 62, 0.7);
+        color: rgba(34, 21, 62, 0.8);
 
         @media screen and (max-width: 768px) {
             @apply hidden;
@@ -87,8 +87,8 @@
         z-index: -1;
         width: clamp(15rem, 28vw, 32.5rem);
         height: clamp(15rem, 5vw, 20.5rem);
-        top: 8%;
-        right:2%;
+        top: 10%;
+        right: 0%;
         transition: all 0.4s ease-out;
         transform-origin: center center;
         pointer-events: none;
@@ -96,7 +96,5 @@
             @apply hidden;
         }
     }
-    .circle{
-        @apply w-full h-full;
-    }
+    
 }
