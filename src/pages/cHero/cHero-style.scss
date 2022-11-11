@@ -1,4 +1,15 @@
 .pages{
+    .hero-section{
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        flex-direction: column;
+        align-items: flex-start;
+        min-height: 100vh;
+        padding: 0px;
+    }
+
     &-wrapper{
         @apply  w-full max-w-7xl mx-auto items-start py-20 px-8 relative overflow-hidden transition-all duration-200;
         .content{
@@ -41,12 +52,12 @@
         }    
     }
     .letter{
-        @apply absolute top-[240px] lg:top-[260px] font-bold mx-auto px-14
-        md:text-[180px] lg:text-[200px] leading-[200px] lg:leading-[240px] transition-all duration-200;
+        @apply absolute top-[290px] font-bold mx-auto px-14
+       text-[185px] leading-[220px] transition-all duration-200;
         font-family: Tahoma;
         color: rgba(34, 21, 62, 0.8);
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1024px) {
             @apply hidden;
         }
     }

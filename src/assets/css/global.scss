@@ -21,7 +21,7 @@ body{
 }
 
 .pages{
-    @apply text-letters w-full min-h-[76vh];
+    @apply text-letters w-full min-h-full;
 
     &-container{
         @apply  w-full max-w-7xl mx-auto items-start py-20 px-8 relative overflow-hidden delay-200;
