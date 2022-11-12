@@ -32,7 +32,7 @@
                     <a :href="linkedinUrl" target="_blank"><app-icons name="linkedin" :size="25" class="mr-3"></app-icons></a>
                     <a :href="instagramUrl" target="_blank"><app-icons name="instagram" :size="25"></app-icons></a>
                 </div>
-                <span>Projetado e codificado por Charlly <strong> ©Copyright 2022</strong></span>
+                <span>Projetado e codificado por Charlly Garcia<strong> ©Copyright 2022</strong></span>
             </div>
             <div class="footer-line"></div>
         </div>

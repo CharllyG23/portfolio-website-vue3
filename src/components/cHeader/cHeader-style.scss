@@ -61,8 +61,8 @@ header {
     }
 
     .logo {
-        @apply flex font-medium text-3xl absolute left-1/2 transform -translate-x-1/2 lg:static lg:transform-none text-primary;
-        
+        @apply flex font-bold text-3xl absolute left-1/2 transform -translate-x-1/2 lg:static lg:transform-none text-primary;
+        font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
         a{
             @apply items-center h-full flex ;
         }

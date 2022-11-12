@@ -54,8 +54,7 @@
     .letter{
         @apply absolute top-[290px] font-bold mx-auto px-14
        text-[185px] leading-[220px] transition-all duration-200;
-        font-family: Tahoma;
-        color: rgba(34, 21, 62, 0.8);
+        color: rgba(34, 21, 62, 0.9);
 
         @media screen and (max-width: 1024px) {
             @apply hidden;
