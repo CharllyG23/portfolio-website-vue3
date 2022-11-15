@@ -5,7 +5,7 @@
                 <h2 class="footer-container-titleF">Vamos conversar?</h2>
                 <div class="footer-container-info">
                     <div class="footer-container-info-subTitle">
-                        <p>Contate-me, podemos construir algo incrível juntos? Eu adoraria ouvir de você!</p>
+                        <p>Contate-me, podemos construir algo incrível juntos. Eu adoraria ouvir de você!</p>
                         <div class="footer-container-location">
                             <div class="flex items-center">
                                 <app-icons name="location" :size="20" class="mr-3"/>
@@ -43,7 +43,6 @@
 import { ref } from 'vue'
 import AppIcons from '../AppIcons/AppIcons.vue'
 import cToast from '../cToast/cToast.vue';
-import circle from '../../assets/img/circle.svg'
 
 const instagramUrl = import.meta.env.VITE_APP_INSTAGRAM_URL
 const gitHubUrl = import.meta.env.VITE_APP_GITHUB_URL
@@ -57,7 +56,7 @@ const openToast = () => {
     navigator.clipboard.writeText(email.value)
     setTimeout(() => {
         toastVisible.value = false
-    }, 3000)
+    }, 2500)
 }
 
 </script>

@@ -1,9 +1,6 @@
 <template>
   <section id="home" class="pages">
     <div class="hero-section">
-      <div class="image-svg">
-        <img class="circle" :src="circle" alt="cicle-svg">
-      </div>
       <div class="letter">
         <h3>FRONT</h3>
         <h3>END</h3>
@@ -48,7 +45,6 @@
 <script setup>
 import AppIcons from '../../components/AppIcons/AppIcons.vue';
 import Cv from '../../assets/file/CV-Charlly-Garcia.pdf'
-import circle from '../../assets/img/circle.svg'
 
 const instagramUrl = import.meta.env.VITE_APP_INSTAGRAM_URL
 const gitHubUrl = import.meta.env.VITE_APP_GITHUB_URL
