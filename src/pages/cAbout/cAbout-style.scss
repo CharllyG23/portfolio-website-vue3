@@ -88,7 +88,11 @@
                 @apply text-center;
             }
             svg{
-                display: inline;
+                @apply inline-flex cursor-default;
+                &:hover{
+                    transform: translateY(-4px);
+                    transition: transform .2s ease-out; 
+                }
             }
         }  
 

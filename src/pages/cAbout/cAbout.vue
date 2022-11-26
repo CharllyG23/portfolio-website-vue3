@@ -29,7 +29,7 @@
             </div>
             <div class="pages__wrapper--iconsContainer" >
                 <div class="align" v-for="item in items" :key="item" >
-                    <app-icons :name="item.icon" :size="45"></app-icons>
+                    <app-icons :name="item.icon" :size="50"></app-icons>
                     <div class="pt-3">
                         <span>{{item.title}}</span>
                     </div>

@@ -30,13 +30,13 @@
     <div class="icons">
       <ul>
         <li>
-          <a :href="gitHubUrl" target="_blank"><app-icons name="git-hub" :size="22"></app-icons></a>
+          <a :href="gitHubUrl" target="_blank"><app-icons name="git-hub" :size="28"></app-icons></a>
         </li>
         <li>
-          <a :href="linkedinUrl" target="_blank"><app-icons name="linkedin" :size="22"></app-icons></a>
+          <a :href="linkedinUrl" target="_blank"><app-icons name="linkedin" :size="28"></app-icons></a>
         </li>
         <li>
-          <a :href="instagramUrl" target="_blank"><app-icons name="instagram" :size="22"></app-icons></a>
+          <a :href="instagramUrl" target="_blank"><app-icons name="instagram" :size="28"></app-icons></a>
         </li>
       </ul>   
     </div>

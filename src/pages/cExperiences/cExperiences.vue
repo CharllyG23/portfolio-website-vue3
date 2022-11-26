@@ -1,6 +1,6 @@
 <template>
    <div id="experiences" class="pages ">
-      <div class="pages-container scroll-smooth">
+      <div class="pages-container">
          <h1 class="title">Experiências</h1>
          <div class="pages-container-content">
             <div class="steps">
@@ -16,6 +16,15 @@
                   </div>
                </div>
             </div>
+         </div>
+      </div>
+      <div class="pages__lettersAnimation">
+         <div class="pages__lettersAnimation--animate">
+            <h5 data-text="CRIATIVA">CRIATIVA</h5>
+         </div>
+         <h3>EU SOU</h3>
+         <div class="pages__lettersAnimation--animate">
+            <h5 data-text="PROACTIVA">PROACTIVA</h5>
          </div>
       </div>
    </div>
