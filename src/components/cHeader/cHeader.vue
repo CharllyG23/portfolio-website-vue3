@@ -29,8 +29,7 @@
     </header>
 </template>
 <script setup>
-import { ref, onMounted, onBeforeUnmount, watchEffect } from 'vue'
-import cLangSelector from '../cLangSelector/cLangSelector.vue';
+import { ref, onMounted } from 'vue'
 import AppIcons from '../AppIcons/AppIcons.vue';
 
 const scroll = ref(false)
