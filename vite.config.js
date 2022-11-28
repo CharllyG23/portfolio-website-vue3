@@ -9,11 +9,7 @@ export default defineConfig({
 		port: 8080,
 	},
 
-  resolve: {
-		alias: {
-			'@': path.resolve(__dirname, './src'),
-		},
-	},
+  base: '/portfolio-website-vue3/',
   
   plugins: [vue()]
 })
