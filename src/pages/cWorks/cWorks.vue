@@ -12,6 +12,14 @@
                         <a :href="cecoguayUrl" target="_blank" class="card__button">Ver projeto</a>
                     </div>
                 </div>
+                <div class="card">
+                    <img :src="prototype2" alt="Projeto Cecoguay">
+                    <div class="info">
+                        <h2 >Criptomoeda </h2>
+                        <p >O projeto é baseado em selecionar sua criptomoeda favorita e ver o valor em tempo real.</p>
+                        <a :href="cryptoUrl" target="_blank" class="card__button">Ver projeto</a>
+                    </div>
+                </div>
                 <div  v-for="card in cards" :key="card" class="card" >
                     <img :src="developer" alt="Desenvolvedor">
                     <div class="info">
@@ -27,19 +35,16 @@
 import { ref } from 'vue';
 import prototype from '../../assets/img/prototype.jpg'
 import developer from '../../assets/img/dev.svg'
+import prototype2 from '../../assets/img/prototype-2.png'
 
 const cecoguayUrl = import.meta.env.VITE_APP_CECOGUAY_URL
+const cryptoUrl = import.meta.env.VITE_APP_CRYPTO_URL
 
 const cards = ref([
     {   
         title: 'Em breve',
         subTitle: 'Pegue o café e espere um pouco, estou desenvolvendo o projeto.',
     },
-
-    {   
-        title: 'Em breve',
-        subTitle: 'Pegue o café e espere um pouco, estou desenvolvendo o projeto.',
-    }
 ])
 </script>
 <style lang="scss" scoped>
