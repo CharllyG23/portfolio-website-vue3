@@ -24,28 +24,27 @@
          </div>
          <h3>EU SOU</h3>
          <div class="pages__lettersAnimation--animate">
-            <h5 data-text="PROACTIVA">PROACTIVA</h5>
+            <h5 data-text="PROATIVA">PROATIVA</h5>
          </div>
       </div>
    </div>
 </template>
 <script setup>
-
 const steps = [
    {
 		title: 'Plug Apps',
-		time: 'Outubro 2020 - Junho 2021',
-      subTitle: 'Colaborei de perto com a maioria da equipe codificando e corrigindo bugs em sites internos da empresa.',
+		time: 'Agosto 2020 - Julho 2021',
+      subTitle: 'Projetar, e criar layout de um painel administrativo para organizar sorteios. Além de refatorar e melhorar o código, eliminando bugs que surgiam de projetos que já existiam. .',
 	},
    {
 		title: 'A&M Solutions',
-		time: 'Julho 2021 - Setembro 2021',
-      subTitle: 'Trabalhei principalmente para garantir experiências de usuário satisfatórias e consistente.',
+		time: 'Junho 2021 - Novembro 2021',
+      subTitle: 'Garantir experiências satisfatórias e consistentes do usuário no projeto assistencial para prescrições médicas, atestados médicos e consultas.',
 	},
    {
 		title: 'Partyou',
 		time: 'Novembro 2021 - Atual',
-      subTitle: 'Junto com a equipe de frontend, criamos código moderno e de fácil manutenção com o framework Vue 3.',
+      subTitle: 'Responsavel junto a equipe de criar toda base do projeto front-end. Criando estrutura de microfrontend, design system com Tailwindcss, SASS e Storybook, clean code.',
 	},
 ]
 </script>

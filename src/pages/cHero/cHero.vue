@@ -3,8 +3,8 @@
     <div class="hero-section">
       <transition name="fade" mode="out-in">
         <div v-if="display" class="letter">
-          <h3>FRONT</h3>
-          <h3>END</h3>
+          <h3>ENGINEER &</h3>
+          <h3>DEVELOPER</h3>
         </div>
       </transition>
       <div class="pages-wrapper">
@@ -19,13 +19,13 @@
                 <h1 >Sou Charlly,</h1>
                 <app-icons name="coffee" :size="80"></app-icons>
               </div>
-                <h2 class="content-degraded"><span class="underline">Frontend Developer</span></h2>
+                <h2 class="content-degraded"><span class="underline">{{ currentText }}</span></h2>
               <div class="content-subTitle">
-                <p>Sou uma Engenheira da Informatica, dedicada ao Desenvolvimento Frontend (ocasionalmente faço UI design) criando experiências digitais intuitivas e adaptáveis ​​para os usuários.</p>
+                <p>Sou Engenheira de Informática, dedicado ao Desenvolvimento Front-end, com mais de <strong>3+</strong> anos de experiência.</p>
               </div>
-              <div class="content-download">
+              <!-- <div class="content-download">
                 <a :href="Cv" download>Download CV<app-icons name="download" :size="24" class="ml-2" /></a>
-              </div>
+              </div> -->
             </div>
           </transition>
         </div> 
@@ -58,9 +58,22 @@ const gitHubUrl = import.meta.env.VITE_APP_GITHUB_URL
 const linkedinUrl = import.meta.env.VITE_APP_LINKEDIN_URL
 
 const display = ref(false)
+const texts = ref(['Informatics Engineer', 'Web Designer', 'Frontend Developer'])
+const currentText = ref('Frontend Developer')
+
+const getRandomText = () => {
+  return texts.value[Math.floor(Math.random() * texts.value.length)];
+}
+
+const animateText = () => {
+  setInterval(() =>{
+    currentText.value = getRandomText();
+  }, 1300)
+}
 
 onMounted(() =>{
   display.value = false
+  animateText()
   setTimeout(() =>{
     display.value = true
   }, 500)

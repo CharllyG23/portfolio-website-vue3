@@ -25,8 +25,9 @@
                 @apply w-full max-w-md lg:max-w-lg font-light text-sm lg:text-base py-6 lg:py-8 md:pr-7 lg:pr-0 
                 whitespace-normal transition-all duration-200;
             }
+
             &-degraded{
-                @apply font-bold transition lg:text-[6.5vw] md:text-7xl text-[2.921rem] w-full max-w-max transform leading-[50px] 
+                @apply font-bold transition lg:text-[6vw] md:text-7xl text-[2.921rem] w-full max-w-max transform leading-[50px] 
                 cursor-context-menu text-primary duration-200;
 
                 &:hover .underline {
@@ -52,9 +53,9 @@
         }    
     }
     .letter{
-        @apply absolute top-[150px] lg:text-[15vw] font-bold mx-auto px-14
-       text-[185px] leading-[320px] delay-200 duration-200;
-        color: rgba(34, 21, 62, 0.9);
+        @apply absolute top-[230px] lg:text-[12vw] font-bold mx-auto px-14
+       text-[185px] leading-[200px] delay-200 duration-200;
+        color: rgba(34, 21, 62, 0.6);
 
         @media screen and (max-width: 1023px) {
             @apply hidden;

@@ -5,7 +5,7 @@
             <div class="pages-container-content">
                 <div class="info">
                     <span>{{ data.subTitle }}</span>
-                    <p>{{ data.info }}</p>
+                    <p  class="stress" v-html="data.info"></p>
                     <p>{{ data.info2 }}</p>
                     <p  class="stress" v-html="data.info3"></p>  
                 </div>
@@ -16,11 +16,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="nowadays">
-                <h3>{{ data.nowadayTitle }}</h3>
-                <p class="stress" v-html="data.nowadaySubTitle"></p>
-            </div>            
+            </div> 
         </div>
         <section class="pages__wrapper">
             <div class="pages__wrapper--skill">
@@ -29,7 +25,7 @@
             </div>
             <div class="pages__wrapper--iconsContainer" >
                 <div class="align" v-for="item in items" :key="item" >
-                    <app-icons :name="item.icon" :size="50"></app-icons>
+                    <app-icons :name="item.icon" :size="60"></app-icons>
                     <div class="pt-3">
                         <span>{{item.title}}</span>
                     </div>
@@ -46,11 +42,9 @@ import AppIcons from '../../components/AppIcons/AppIcons.vue';
 const data = ref({
     title: 'Escrevo código, Desenho coisas',
     subTitle: 'Quem é charlly', 
-    info: 'Um desenvolvedora Front-end motivado pela curiosidade de sempre aprender algo novo.',
-    info2: 'Sou apaixonado por dar vida aos aspectos técnicos e visuais dos produtos digitais. Experiência do usuário, belos pixels e escrita acessível e limpa, o código humano é importante para mim, e acredito firmemente que menos é mais.',
-    info3: `Sou  <strong> Engenheiro da Informatica </strong> formado em 2020 na <strong>Venezuela,</strong> mas moro em Brasil um país vibrante cheio de pessoas espetacularmente diferentes, gosto de ler, assistir filmes interessantes com uma mensagem inspiradora,também gosto de jogar jogos de Shooter, e claro que sou um <strong>servo de gatos.</strong>`,
-    nowadayTitle: 'Atualmente trabalhando em:',
-    nowadaySubTitle: 'Melhorar minhas habilidades em JavaScript e estendendo a ideia de microservice <strong>(Microfrontend)</strong> para desenvolvimento frontend.',
+    info: 'Tenho uma paixão profunda por criar experiências digitais excepcionais. Com um desejo incessante de aprendizado, mantenho-me constantemente atualizada sobre as últimas tendências e tecnologias em desenvolvimento front-end e design de interface do usuário (UI Design).',
+    info2: 'Acredito firmemente que uma interface de usuário bem projetada é a chave para o sucesso de qualquer produto digital. Meu objetivo é combinar habilidades técnicas avançadas com conceitos de design inovadores, a fim de criar interfaces bonitas, intuitivas e altamente funcionais.',
+    info3: `Minha formação em Engenharia da Informática me forneceu uma base sólida em programação e resolução de problemas complexos. Compreender as necessidades dos usuários e as metas do negócio é fundamental para mim. Ao longo da minha carreira, adquiri experiência em projetos diversos, desde sites institucionais até aplicações web complexas. Valorizo ​​a escrita de código limpo (Clean Code), modular e bem documentado, o que facilita a manutenção e escalabilidade dos projetos.`,
     skill: 'Skill & Tools',
     tools: 'Minha caixa de ferramentas e coisas que posso fazer'
 
@@ -59,7 +53,7 @@ const data = ref({
 const items = ref([
 	{
 		icon: 'scss',
-		title: "Scss",
+		title: "Sass",
 	},
 	{
 		icon: 'html',
