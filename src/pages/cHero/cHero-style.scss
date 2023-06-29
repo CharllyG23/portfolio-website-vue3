@@ -13,13 +13,10 @@
     &-wrapper{
         @apply  w-full max-w-7xl mx-auto items-start py-20 px-8 relative overflow-hidden transition-all duration-200;
         .content{
-            @apply pt-20 font-bold text-4xl md:text-6xl lg:text-7xl transition-all delay-300 duration-200;
+            @apply pt-20 font-bold text-4xl lg:text-5xl transition-all duration-200;
     
             &-header{
-                @apply flex items-center font-bold text-4xl md:text-6xl lg:text-7xl transition-all duration-200;
-            }
-            &-coffee{
-                @apply flex items-center lg:pb-4;
+                @apply flex items-center font-bold text-4xl lg:text-5xl transition-all duration-200;
             }
             &-subTitle{
                 @apply w-full max-w-md lg:max-w-lg font-light text-sm lg:text-base py-6 lg:py-8 md:pr-7 lg:pr-0 
@@ -38,7 +35,7 @@
                 width: calc(90%);
                 background-image: linear-gradient(transparent calc(100% - 6px), #fb00ff 10px);
                 background-repeat: no-repeat;
-                background-size: 0% 100%;
+                background-size: 100% 100%;
                 text-decoration: none;
                 transition: background-size 1.5s;
               }
@@ -53,9 +50,9 @@
         }    
     }
     .letter{
-        @apply absolute top-[230px] lg:text-[12vw] font-bold mx-auto px-14
+        @apply absolute  lg:text-[12vw] font-bold mx-auto px-14
        text-[185px] leading-[200px] delay-200 duration-200;
-        color: rgba(34, 21, 62, 0.6);
+        color: rgba(34, 21, 62, 0.3);
 
         @media screen and (max-width: 1023px) {
             @apply hidden;

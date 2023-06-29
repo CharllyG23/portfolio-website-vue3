@@ -17,7 +17,7 @@
                         <div class="footer-container-email-icon">
                            <div class="flex items-center">
                                 <app-icons name="email" class="mr-3" :size="25"/>
-                                <span>Clique e envie um e-mail</span>
+                                <span>clique no texto e envie um e-mail</span>
                            </div>
                         </div>
                         <div @click="openToast">
@@ -32,7 +32,7 @@
                     <a :href="linkedinUrl" target="_blank"><app-icons name="linkedin" :size="25" class="mr-3"></app-icons></a>
                     <a :href="instagramUrl" target="_blank"><app-icons name="instagram" :size="25"></app-icons></a>
                 </div>
-                <span>Projetado e codificado por Charlly Garcia<strong> ©Copyright 2022</strong></span>
+                <span>Design livremente em Figma e codificado em VsCode<strong> ©Copyright 2023</strong></span>
             </div>
             <div class="footer-line"></div>
         </div>

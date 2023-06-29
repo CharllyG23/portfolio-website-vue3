@@ -8,8 +8,26 @@
             @apply w-full flex-wrap text-sm lg:text-base font-light py-3;
         } 
     }
+
+    .download{
+        @apply flex font-medium text-white text-base rounded w-48 h-14 justify-center cursor-pointer items-center bg-secondary;
+        box-shadow: 0px 5px 5px 0px #021127;
+        &:hover{
+            transform: translateY(-7px);
+            transition: transform .2s ease-out; 
+        }
+        a{
+            @apply flex;
+        }
+    }
+    .__backgr{
+        @apply lg:p-7 p-4;
+        background: #031229;
+        box-shadow: 0px 5px 5px 0px #021127;
+        border-radius: 8px;
+    }
     .about-img {
-        @apply max-w-[300px] relative lg:pr-12;
+        @apply max-w-[300px] relative lg:pr-8;
         .wrapper{
             @apply block relative w-full rounded-xl text-secondary;
             box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
@@ -78,24 +96,39 @@
     }
 
     &__wrapper{
-        @apply  w-full mx-auto text-center items-start pt-10 pb-10 lg:pb-24 px-8 lg:px-12 relative overflow-hidden;
+        @apply  w-full mx-auto text-center items-start pt-24 relative overflow-hidden;
     
         &--iconsContainer{
-            @apply inline-flex relative text-sm lg:text-base flex-wrap box-border items-center justify-center gap-8 lg:gap-10 lg:pt-20 pt-10;
-            
-            .align{
-                @apply text-center;
+            @apply py-10 lg:py-10;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            gap: 20px;
+              
+        } 
+        
+        ._cards{
+            width: 130px;
+            height: 114px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            background: #031229;
+            box-shadow: 0px 5px 5px 0px #021127;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &:hover{
+                transform: translateY(-7px);
+                transition: transform .2s ease-out; 
             }
-            svg{
-                @apply inline-flex cursor-default;
-                &:hover{
-                    transform: translateY(-4px);
-                    transition: transform .2s ease-out; 
-                }
-            }
-        }  
+        }
 
         &--skill{
+            @apply text-left;
             h3{
             @apply text-3xl lg:text-5xl font-bold pb-7 text-primary;
             }

@@ -18,15 +18,6 @@
             </div>
          </div>
       </div>
-      <div class="pages__lettersAnimation">
-         <div class="pages__lettersAnimation--animate">
-            <h5 data-text="CRIATIVA">CRIATIVA</h5>
-         </div>
-         <h3>EU SOU</h3>
-         <div class="pages__lettersAnimation--animate">
-            <h5 data-text="PROATIVA">PROATIVA</h5>
-         </div>
-      </div>
    </div>
 </template>
 <script setup>

@@ -17,7 +17,7 @@
                 lg:before:content-['']
                 lg:before:absolute
                 lg:before:h-[1px]
-                lg:before:bg-blue-200
+                lg:before:bg-secondary
                 lg:before:top-3
                 lg:before:left-[10rem]
                 lg:before:right-[10rem];
@@ -36,7 +36,7 @@
                     after:left-[13px]
                     after:w-[1px]
                     after:rounded-sm
-                    after:bg-blue-200
+                    after:bg-secondary
                     lg:after:hidden
                     lg:flex-col
                     lg:gap-2
@@ -64,8 +64,9 @@
                     flex-none
                     text-base
                     font-semibold
-                    rounded-full;
-                    background: linear-gradient(55.26deg, #4456fa, #fb00ff 100%);
+                    rounded-full
+                    bg-primary;
+                   
                 }
     
                 &__info{
@@ -83,48 +84,4 @@
             }
         }
     } 
-
-    &__lettersAnimation{
-        @apply py-14 lg:py-36;
-
-        h3{
-            @apply text-center font-bold text-2xl lg:text-6xl;
-        }
-
-        &--animate{
-           @apply flex items-center justify-center text-center;
-
-           h5{
-            position: relative;
-            font-size: 8vw;
-            font-weight: 700;
-            color: #13172e;
-            -webkit-text-stroke: 0.1vw #24293f;
-            text-transform: uppercase;
-    
-            &::before{
-                content: attr(data-text);
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 20%;
-                height: 100%;
-                color: #F907FC;
-                -webkit-text-stroke: 0vw #2b3148;
-                border-right: 2px solid #F907FC;
-                overflow: hidden;
-                animation: animate 6s linear infinite;
-            }
-        }
-        }
-
-        @keyframes animate {
-            0%, 10%, 100%{
-                width: 0;
-            }
-            70%, 90%{
-                width: 100%;
-            }
-        }
-    }
 }
