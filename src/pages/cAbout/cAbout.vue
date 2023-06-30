@@ -6,10 +6,19 @@
                 <div class="pages-container-content">
                     <div class="info">
                         <span>{{ data.subTitle }}</span>
-                        <p  class="stress" v-html="data.info"></p>
-                        <p>{{ data.info2 }}</p>
-                        <p  class="stress" v-html="data.info3"></p>  
-                        <div class="pt-8">
+                        <!-- minHeight -->
+                        <div class="description" :style="heightStyle">
+                            <!-- expandedHeight -->
+                            <div ref="expanded">
+                                <p class="stress" v-html="data.info"></p>
+                                <p>{{ data.info2 }}</p>
+                                <p  class="stress" v-html="data.info3"></p> 
+                            </div>
+                        </div> 
+                        <button v-if="buttonVisibility" class="seeMore" @click="isExpanded = !isExpanded">
+                            {{ (isExpanded ?  'Ver menos': 'Ver mais...') }}
+                        </button>
+                        <div class="button">
                             <div class="download">
                                 <a :href="Cv" download>Download CV<app-icons name="download" :size="24" class="ml-2" /></a>
                             </div>
@@ -22,13 +31,18 @@
                             </div>
                         </div>
                     </div>
+                    <div class="pt-10 flex justify-center pb-3 lg:justify-start lg:hidden">
+                            <div class="download">
+                                <a :href="Cv" download>Download CV<app-icons name="download" :size="24" class="ml-2" /></a>
+                            </div>
+                        </div>
                 </div> 
             </div>
             <section class="pages__wrapper">
                 <div class="pb-10">
                     <div class="pages__wrapper--skill">
                         <h3>{{ data.skill }}</h3>
-                        <p>{{ data.tools }}</p>
+                        <h2 class="_subTitle">{{ data.tools }}</h2>
                     </div>
                     <div class="pages__wrapper--iconsContainer" >
                         <div v-for="item in items" :key="item" >
@@ -41,7 +55,7 @@
                 </div>
                 <div class="pages__wrapper--skill">
                     <h3>{{ data.design }}</h3>
-                    <p>{{ data.ui }}</p>
+                    <h2 class="_subTitle">{{ data.ui }}</h2>
                 </div>
                 <div class="pages__wrapper--iconsContainer" >
                     <div v-for="item in design" :key="item" >
@@ -57,10 +71,56 @@
     </div>  
 </template>
 <script setup>
-import { ref } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import imageDefault from '../../assets/img/img-perfil.png'
 import Cv from '../../assets/file/CV-Charlly-Garcia.pdf';
 import AppIcons from '../../components/AppIcons/AppIcons.vue';
+
+const isExpanded = ref(false)
+const expanded = ref(null)
+const minHeight = ref(0)
+const expandedHeight = ref(0)
+
+
+let timer = null
+
+const observer = new ResizeObserver((entries) => {
+	// debounce
+	if (timer) {
+		clearTimeout(timer)
+	}
+
+	timer = setTimeout(() => {
+		const { height } = entries[0].contentRect
+		expandedHeight.value = height
+
+		const LINES = 7
+		const LINES_MOBILE = LINES * 22
+		const LINES_DESKTOP = LINES * 29
+
+		minHeight.value = window.innerWidth < 1024 ? LINES_MOBILE : LINES_DESKTOP
+	}, 500)
+})
+
+const buttonVisibility = computed(() => {
+	if (!expanded.value) {
+		return false
+	}
+
+	return expandedHeight.value > minHeight.value
+})
+
+const heightStyle = computed(() => {
+	const style = {
+		height: minHeight.value + 'px',
+	}
+
+	if (expandedHeight.value < minHeight.value || isExpanded.value) {
+		style.height = 'auto'
+	}
+
+	return style
+})
 
 const data = ref({
     title: 'Escrevo código, Desenho coisas',
@@ -78,11 +138,11 @@ const data = ref({
 const items = ref([
 	{
 		icon: 'html',
-		title: "Html",
+		title: "HTML",
 	},
     {
 		icon: 'css',
-		title: "Css",
+		title: "CSS",
 	},
     {
 		icon: 'scss',
@@ -129,7 +189,7 @@ const design = ref([
 	},
     {
 		icon: 'adobe-xd',
-		title: "AdobeXd ",
+		title: "Adobe Xd ",
 	},
     {
 		icon: 'adobe-il',
@@ -137,6 +197,15 @@ const design = ref([
 	},
 ])
 
+onMounted(() => {
+	if (expanded.value) {
+		observer.observe(expanded.value)
+	}
+})
+
+onBeforeUnmount(() => {
+	observer.unobserve(expanded.value)
+})
 </script>
 <style lang="scss" scoped>
 @import './cAbout-style.scss';

@@ -34,8 +34,9 @@ body{
             @apply font-bold text-4xl lg:text-5xl mb-8 whitespace-pre-wrap box-border max-w-full w-[360px] text-primary;
         }
         
-        .subTitle{
-            @apply text-center w-full max-w-[31.125rem] mx-auto text-base text-letters font-normal mb-14 pt-5 lg:text-[20px] lg:leading-9;
+        ._subTitle{
+            @apply text-left w-full mx-auto text-base text-letters font-normal pt-3 lg:text-[20px] lg:leading-9 ;
         }
+
     }
 }

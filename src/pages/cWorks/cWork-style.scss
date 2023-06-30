@@ -1,6 +1,6 @@
 .pages{
     .wrapper {
-        @apply flex w-full justify-center flex-wrap gap-7 transition transform;
+        @apply flex w-full justify-center flex-wrap gap-7 transition transform pt-12 lg:pt-24;
       
           .card {
             @apply w-[300px] h-80 rounded-md p-6 relative flex items-end;

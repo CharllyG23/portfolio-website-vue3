@@ -2,7 +2,7 @@
    <div id="works" class="pages">
       <div class="pages-container">
             <h1 class="title">Projetos</h1>
-            <h2 class="subTitle">Algumas coisas eu construí e outras para fazer.</h2>
+            <h2 class="_subTitle">Algumas coisas eu construí e outras para fazer.</h2>
             <div class="wrapper">
                 <div class="card">
                     <img :src="prototype" alt="Projeto Cecoguay">

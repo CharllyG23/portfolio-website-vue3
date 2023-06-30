@@ -19,9 +19,6 @@
                         <li><a href="#experiences" class="header-link">Experiências</a></li>
                         <li><a href="#works" class="header-link">Trabalhos</a></li>
                         <li><a href="#contact" class="header-link">Contate-me</a></li>
-                       <!-- <li class="header-link">
-                           <c-lang-selector/>
-                        </li>  -->
                     </ul>    
                 </nav>
             </div>

@@ -1,7 +1,6 @@
 .pages{            
     .steps {
-        @apply lg:pt-16 w-full mx-auto;
-
+        @apply pt-12 lg:pt-24 w-full mx-auto;
         &__list {
             @apply 
                 max-w-sm
@@ -16,12 +15,12 @@
                 lg:relative
                 lg:before:content-['']
                 lg:before:absolute
-                lg:before:h-[1px]
+                lg:before:h-[3px]
                 lg:before:bg-secondary
                 lg:before:top-3
                 lg:before:left-[10rem]
                 lg:before:right-[10rem];
-            
+
             &--item {
                 @apply 
                     flex
@@ -34,7 +33,7 @@
                     after:bottom-0
                     after:top-9
                     after:left-[13px]
-                    after:w-[1px]
+                    after:w-[3px]
                     after:rounded-sm
                     after:bg-secondary
                     lg:after:hidden
@@ -65,21 +64,37 @@
                     text-base
                     font-semibold
                     rounded-full
-                    bg-primary;
+                    border-2
+                    border-secondary;
+                    background-color: #020B1B;
                    
                 }
     
                 &__info{
                 @apply ml-4;
                     .__titleInfo {
-                        @apply text-base font-semibold pt-0.5 lg:text-center text-primary;;
+                        @apply text-lg font-semibold pt-0.5 lg:text-center text-primary;;
                     }
                     .__timeInfo {
-                        @apply text-[10px] text-slate-400 pt-1 lg:text-center;
+                        @apply text-xs text-slate-400 pt-1 lg:text-center;
                     }
-                    .__subTitleInfo {
-                        @apply text-sm text-letters pt-3 lg:text-center;
+                    .__timeList{
+                        li{
+                            @apply ml-5 pb-1;
+                            list-style-type: disc;
+                            &::marker{
+                                @apply text-letters text-xl;
+                            }
+                        }
+
+                        .__resp{
+                            @apply ml-2 text-slate-400 text-sm py-2;
+                        }
                     }
+                    .__timeWork{
+                        @apply pt-3 ml-2 text-secondary font-medium;
+                    }
+    
                 }
             }
         }
