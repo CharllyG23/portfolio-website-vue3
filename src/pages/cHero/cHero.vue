@@ -13,7 +13,7 @@
             <div v-if="display" class="content">
               <div class="content-header">
                 <h1 class="pb-2">Oiê</h1>
-                <app-icons name="hands" :size="34" class="ml-5"></app-icons>
+                <app-icons name="hands" :size="34" class="ml-5 hand"></app-icons>
               </div>
                 <h1 class="pb-3">Sou Charlly,</h1>
                 <h2 class="content-degraded"><span class="underline">{{ currentText }}</span></h2>
